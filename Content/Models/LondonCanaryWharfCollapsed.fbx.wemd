@@ -1,0 +1,45 @@
+!WaveEngine.Assets.Exporters.ModelMetaFile,WaveEngine.Assets
+Id: 853f09fd-70eb-4615-9265-505292a89a52
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: b42e77a0-0f0e-4dbd-bc1e-f8b64fb09bc5
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 05f3c5f7-966e-48af-9b22-5d4575f12c05
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: SimplygonCastMaterial002
+        Item2: 7968617e-d809-43f1-917a-71bd024ad711
+      - Item1: SimplygonCastMaterial
+        Item2: 62bec0fa-8b47-468d-8d4c-629ce3071a17
+      - Item1: SimplygonCastMaterial001
+        Item2: 79d0f58e-5ace-42c8-82af-03fed9bd1fed
+      - Item1: SimplygonCastMaterial003
+        Item2: 9ee97618-eacd-490f-b6e7-6dd77f88081d
+      - Item1: SimplygonCastMaterial004
+        Item2: 8597370f-beb1-4069-84ab-1c69135a7c5b
+      - Item1: SimplygonCastMaterial005
+        Item2: e38724c5-fc75-4ab8-bbcd-2fdd05c3ac51
+      - Item1: SimplygonCastMaterial006
+        Item2: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
+    Nodes:
+      - RootNode
+      - RootNode.CityPart0
+      - RootNode.CityPart1
+      - RootNode.CityPart2
+      - RootNode.CityPart3
+      - RootNode.CityPart4
+      - RootNode.CityPart5
+      - RootNode.CityPart6
+SwapWindingOrder: false

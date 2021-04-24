@@ -1,0 +1,42 @@
+!WaveEngine.Assets.Exporters.MaterialMetaFile,WaveEngine.Assets
+Id: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 4ac24c6c-ee69-4654-8eee-dd57e6ae8e55
+  ActiveDirectives:
+    - DIFF
+  AllowInstancing: false
+  EffectID: 236d6e83-3777-43e0-ae50-b43288d4d87d
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      ValueByteArray: hXWSQAAAAAAAAAAAAAAAAAAAAACYMopADf9kvzD5ZL8AAAAAmjIKwAv/5L8u+eS/AAAAAHmCGjUf7ItAvRuPQA==
+    - Name: World
+      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      ValueByteArray: AAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAPw==
+    - Name: Center
+      Type: WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: Radius
+      Type: System.Single
+      ValueByteArray: AADAPw==
+    - Name: StartBorder
+      Type: System.Single
+      ValueByteArray: MzOzPw==
+  Samplers:
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+  Textures:
+    - ID: b3b71358-a54e-4723-81a0-e657fd7b5a72
+      Name: BaseColorTexture
+    - ID: 117fcdd5-86c6-4ea7-a3b4-348c5c135a88
+      Name: GradientTexture
+Profiles: {}
