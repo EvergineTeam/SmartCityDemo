@@ -57,7 +57,7 @@ namespace SmartCityDemo.Components
 
         private void RefreshScale()
         {
-            var pos2D = new Vector2(this.transform.Position.X, this.transform.Position.Z);            
+            var pos2D = new Vector2(this.transform.Position.X, this.transform.Position.Z);
             var distance = Vector2.Distance(pos2D, this.Center);
             this.targetScale = (distance < this.Distance) ? this.initScale : Vector3.Zero;
         }

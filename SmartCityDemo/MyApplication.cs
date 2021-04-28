@@ -17,7 +17,7 @@ namespace SmartCityDemo
             this.Container.RegisterType<GraphicsPresenter>();
             this.Container.RegisterType<AssetsDirectory>();
             this.Container.RegisterType<AssetsService>();
-            this.Container.RegisterType<ForegroundTaskSchedulerService>();            
+            this.Container.RegisterType<ForegroundTaskSchedulerService>();
             this.Container.RegisterType<WorkActionScheduler>();
         }
 

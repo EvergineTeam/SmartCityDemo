@@ -12,7 +12,7 @@ namespace SmartCityDemo
 		public override void RegisterManagers()
         {
         	base.RegisterManagers();
-        	this.Managers.AddManager(new WaveEngine.Bullet.BulletPhysicManager3D());        	
+        	this.Managers.AddManager(new WaveEngine.Bullet.BulletPhysicManager3D());
         }
 
         protected override void CreateScene()
