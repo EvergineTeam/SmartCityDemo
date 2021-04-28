@@ -26,10 +26,10 @@ Items:
         Id: 94fb114a-c4d8-4674-bd4d-409893d8ab53
         IntensityMultiplier: 1.0
         IsEnabled: true
-        ReflectionProbe: cb4c9738-03a0-494f-a839-20a22581fb59
+        ReflectionProbe: ac075b6e-296e-4469-9628-8f0d3dc80854
       - !WaveEngine.Components.Graphics3D.ShadowMapComponent,WaveEngine.Framework
         Id: 4dc7a18d-bde5-4e59-8c0c-67b68a42207e
-        AutoDepthBounds: true
+        AutoDepthBounds: false
         DirectionalResolution: Size_1024
         IsEnabled: true
         PunctualResolution: Size_512
@@ -38,91 +38,118 @@ Items:
     Children: []
     Id: 3aea6832-ccae-4bc6-9bb7-64229c7c2de0
   - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-    Name: Camera
+    Name: cameraRoot
     Tag: null
     IsEnabled: true
     IsStatic: false
     Components:
       - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-        Id: 809f1d2c-2305-4916-acfe-f81399ffb235
+        Id: e6c04844-9727-4279-b56d-09e71c9a02ce
         IsEnabled: true
         LocalOrientation:
-          W: 0.923879564
-          X: -0.382683396
-          Y: 0.0
-          Z: 0.0
+          W: 0.323131144
+          X: -0.11208874
+          Y: -0.887796164
+          Z: -0.307961404
         LocalPosition:
           X: 0.0
-          Y: 2.0
-          Z: 2.0
+          Y: 0.0
+          Z: 0.0
         LocalScale:
           X: 1.0
           Y: 1.0
           Z: 1.0
-      - !WaveEngine.Components.Cameras.FreeCamera3D,WaveEngine.Components
-        Id: 07d3e21d-cd4b-412f-88a6-1331d8afa583
+      - !SmartCityDemo.Components.MouseOrbitBehavior,SmartCityDemo
+        Id: 16368e49-433e-44be-a0cb-74889a6650f9
         IsEnabled: true
-        MaxPitch: 1.49225616
-        MouseSensibility: 0.0299999993
-        Speed: 5.0
-        TouchMoveAndOrientationRatio: 0.5
-        TouchSensibility: 1.0
+        MaxElevationAngle: 1.0
+        MaxZoom: 0.5
+        MinElevationAngle: 0.0500000007
+        MinZoom: 9.0
+        OrbitFactor: 0.00249999994
+        OrbitSmooth: 50.0
         UpdateOrder: 0.5
-      - !WaveEngine.Framework.Graphics.Camera3D,WaveEngine.Framework
-        Id: 5b10653e-93d2-48e7-884f-a07b2ac173ee
-        Aperture: 1.0
-        AspectRatio: 1.69580424
-        AutoDepthBounds: true
-        AutoExposureEnabled: false
-        CameraOrder: 0.0
-        ClearDepth: 1.0
-        ClearFlags: All
-        ClearStencil: 0
-        Compensation: 0.0
-        DepthRange:
-          MaxDepth: 1.0
-          MinDepth: 0.0
-        DisplayTag: null
-        DisplayTagDirty: true
-        Exposure: 1.0
-        FarPlane: 1000.0
-        FieldOfView: 0.785398185
-        FieldOfViewAxis: Vertical
-        FocalDistance: 1.0
-        FocalLength: 50.0
-        FrustumCullingEnabled: true
-        HDREnabled: true
+        ZoomFactor: 0.5
+        ZoomSmooth: 100.0
+    Children:
+      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+        Name: Camera
+        Tag: null
         IsEnabled: true
-        LayerMaskDefaultValue: true
-        LinearBackgroundColor:
-          A: 1.0
-          B: 0.851251662
-          G: 0.306634784
-          R: 0.12752977
-        LogLuminanceRange: 12.0
-        MinLogLuminance: -10.0
-        NearPlane: 0.100000001
-        ScreenViewport:
-          Height: 286.0
-          MaxDepth: 1.0
-          MinDepth: 0.0
-          Width: 485.0
-          X: 0.0
-          Y: 0.0
-        Sensitivity: 100.0
-        SensorSize:
-          X: 36.0
-          Y: 24.0
-        ShutterSpeed: 1.20000005
-        TAU: 1.10000002
-        TagFilter: null
-        UpVector:
-          X: 0.0
-          Y: 1.0
-          Z: 0.0
-        UsePhysicalParameters: false
-    Children: []
-    Id: 9841b6b3-9c09-4b60-b442-a5c63257ee02
+        IsStatic: false
+        Components:
+          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+            Id: 93416bbd-a18a-43ec-a74a-cdd0345f0275
+            IsEnabled: true
+            LocalOrientation:
+              W: 0.998220205
+              X: 0.0596356876
+              Y: 1.34110437E-07
+              Z: 0.0
+            LocalPosition:
+              X: 5.00679016E-06
+              Y: -0.0634746552
+              Z: 5.80459118
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !WaveEngine.Framework.Graphics.Camera3D,WaveEngine.Framework
+            Id: 8d8fd409-9ab8-4c05-ad8f-34693d553a57
+            Aperture: 1.0
+            AspectRatio: 1.93536127
+            AutoDepthBounds: false
+            AutoExposureEnabled: true
+            CameraOrder: 0.0
+            ClearDepth: 1.0
+            ClearFlags: All
+            ClearStencil: 0
+            Compensation: 0.0
+            DepthRange:
+              MaxDepth: 1.0
+              MinDepth: 0.0
+            DisplayTag: null
+            DisplayTagDirty: false
+            Exposure: 1.07411551
+            FarPlane: 50.0
+            FieldOfView: 0.785398185
+            FieldOfViewAxis: Vertical
+            FocalDistance: 5.0
+            FocalLength: 50.0
+            FrustumCullingEnabled: true
+            HDREnabled: true
+            IsEnabled: true
+            LayerMaskDefaultValue: true
+            LinearBackgroundColor:
+              A: 1.0
+              B: 0.851251662
+              G: 0.306634784
+              R: 0.12752977
+            LogLuminanceRange: 12.0
+            MinLogLuminance: -10.0
+            NearPlane: 0.100000001
+            ScreenViewport:
+              Height: 263.0
+              MaxDepth: 1.0
+              MinDepth: 0.0
+              Width: 509.0
+              X: 0.0
+              Y: 0.0
+            Sensitivity: 100.0
+            SensorSize:
+              X: 36.0
+              Y: 24.0
+            ShutterSpeed: 1.20000005
+            TAU: 1.10000002
+            TagFilter: null
+            UpVector:
+              X: 0.0
+              Y: 1.0
+              Z: 0.0
+            UsePhysicalParameters: false
+        Children: []
+        Id: c219c0b4-f06a-4bb5-8cfc-00340a820729
+    Id: 8c8371e9-596a-49aa-977b-84951b084f1e
   - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
     Name: SunLight
     Tag: null
@@ -164,8 +191,8 @@ Items:
           B: 0.77908951
           G: 0.874792635
           R: 0.9453125
-        ShadowBias: 0.00499999989
-        ShadowDistance: 80.0
+        ShadowBias: 0.00400000019
+        ShadowDistance: 20.0
         ShadowOpacity: 1.0
         SplitDistance:
           - 0.0
@@ -204,7 +231,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 27f28576-c102-4f1a-b8cc-1b064014d2e1
+        Material: 6e3dc72c-a3c1-4c40-9ecd-fe5e65b58b27
       - !WaveEngine.Components.Graphics3D.SphereMesh,WaveEngine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
@@ -240,13 +267,13 @@ Items:
     Children: []
     Id: 6a094fea-e84d-4cbc-bb6e-60ccc60b5693
   - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-    Name: cityRoot
+    Name: translationPivot
     Tag: null
     IsEnabled: true
     IsStatic: false
     Components:
       - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-        Id: bf19a1a3-2b98-48e2-96ce-4ec96cbda2d6
+        Id: e92d89be-7dcc-4afc-9761-fc55dca7b200
         IsEnabled: true
         LocalOrientation:
           W: 1.0
@@ -254,866 +281,28 @@ Items:
           Y: 0.0
           Z: 0.0
         LocalPosition:
-          X: -0.16865617
-          Y: 0.484367967
-          Z: 1.6219039
-        LocalScale:
-          X: 0.75
-          Y: 0.75
-          Z: 0.75
-    Children:
-      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-        Name: cityClipped
-        Tag: null
-        IsEnabled: true
-        IsStatic: false
-        Components:
-          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-            Id: d25197ad-ebb2-42b0-b28a-c9e59f336700
-            IsEnabled: true
-            LocalOrientation:
-              W: 1.0
-              X: 0.0
-              Y: 0.0
-              Z: 0.0
-            LocalPosition:
-              X: -0.19098562
-              Y: 0.332593203
-              Z: 0.987913609
-            LocalScale:
-              X: 1.0
-              Y: 1.0
-              Z: 1.0
-        Children:
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart0
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: a03b4c4e-5016-4fa5-b4e3-3c8985a263a5
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 4315c6c1-e5c1-4736-ac02-405f9e202582
-                AsignedTo: SimplygonCastMaterial002
-                IsEnabled: true
-                Material: 7968617e-d809-43f1-917a-71bd024ad711
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 164b74d3-e062-4a4a-925f-030e82b293f9
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart0
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: ba483158-8035-4c29-9bb3-d85e92928d68
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: c6e5d86d-10d7-4769-acfd-800528cc5e5d
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart1
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: dbc0a019-6563-42a6-ac12-ac86202c9e40
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 241ac538-0d74-4f08-9836-82a647e544ca
-                AsignedTo: SimplygonCastMaterial
-                IsEnabled: true
-                Material: 62bec0fa-8b47-468d-8d4c-629ce3071a17
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 0d383828-b648-456f-9e0f-70b92bd8cf80
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart1
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 2f3261aa-0df6-494b-9561-fc02bf0eeea9
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 4a9f91ad-f2c1-4b60-9703-d34950a5093e
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart2
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 708e10ca-46a9-4496-924e-2c4b208242b5
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: d525fb15-e2d5-49a9-b0a3-ba0e1ccaf343
-                AsignedTo: SimplygonCastMaterial001
-                IsEnabled: true
-                Material: 79d0f58e-5ace-42c8-82af-03fed9bd1fed
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 940ea88d-affe-4fcf-b8a9-db56b7f118d4
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart2
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 1b76fc4c-2deb-442c-8285-e9b0533b36d5
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 6aff44a8-7721-4395-9fda-43456e2fcb1d
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart3
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: f7dd715b-5f02-4abb-bbba-a43a8fabbb00
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 435bbe60-c55b-4514-9a3f-c6805f5ec250
-                AsignedTo: SimplygonCastMaterial003
-                IsEnabled: true
-                Material: 9ee97618-eacd-490f-b6e7-6dd77f88081d
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: f6088599-e4fb-4102-a191-dc5952b47b79
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart3
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: a63340b1-5ea4-4296-b96d-a95b5a8a45a9
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 1366147e-3258-40da-a206-9579eb95e486
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart4
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 22c982e5-c1d8-432b-8d22-6e6dd8bf1d8d
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 74bb49c0-e723-4513-86b7-0e2a7a27da15
-                AsignedTo: SimplygonCastMaterial004
-                IsEnabled: true
-                Material: 8597370f-beb1-4069-84ab-1c69135a7c5b
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 05a52852-74e8-43ec-a6ce-7d7ba4e887a3
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart4
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 470304f1-94fa-429a-b93f-e675d49958f0
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 06f37b2f-5916-4720-9bbf-5ad4f150dcce
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart5
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 9899f783-f16f-483c-beb9-005cc8ecc00b
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 951e77f4-ef5e-4e21-9ac4-03f30c67266e
-                AsignedTo: SimplygonCastMaterial005
-                IsEnabled: true
-                Material: e38724c5-fc75-4ab8-bbcd-2fdd05c3ac51
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 28b936f3-a3c5-48c3-879a-b278d8250279
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart5
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 353eb7e6-d7d2-420b-ad08-ed65d89da493
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: daec415e-4131-4f3e-903d-2e047e16b6b2
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart6
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 45be33d2-a972-48e3-9eb6-a67fae34f026
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 2ccf1edd-1e8b-44ee-86f9-29417504d5bd
-                AsignedTo: SimplygonCastMaterial006
-                IsEnabled: true
-                Material: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 9916680f-b21e-4d83-8bf8-40bc771fe680
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart6
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 04787b71-eacf-4b57-9e35-b201d4a710f3
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: cf45f66e-bda0-4b15-a84f-f92a7fc96921
-        Id: 666eb6af-35fa-4b7b-b04c-9188b4a35873
-      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-        Name: cityNonClipped
-        Tag: null
-        IsEnabled: false
-        IsStatic: false
-        Components:
-          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-            Id: 7046fc72-c818-4ee6-941b-82f6d90e7391
-            IsEnabled: true
-            LocalOrientation:
-              W: 1.0
-              X: 0.0
-              Y: 0.0
-              Z: 0.0
-            LocalPosition:
-              X: -0.19098562
-              Y: 0.332593203
-              Z: 0.987913609
-            LocalScale:
-              X: 1.0
-              Y: 1.0
-              Z: 1.0
-        Children:
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart0
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 6c619ae3-a467-409f-bf77-9a029af5e577
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 79bef0c8-2dc0-405e-81d8-52ba6f939cc5
-                AsignedTo: SimplygonCastMaterial002
-                IsEnabled: true
-                Material: 05c506ca-839d-4e71-95da-3b16cac012b5
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: feb51c28-d8ec-43f2-a3e0-9d93ce1947c0
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart0
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: f4feb789-20bc-4fb4-9c07-09bacb4e52b5
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 3ee601b7-abc1-4c43-8dd4-f61f0de71b37
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart1
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 9662ce5d-4a1e-4b6a-a1f9-a1f65d8101c5
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 56655d06-1a55-4335-8a10-25d442903a7a
-                AsignedTo: SimplygonCastMaterial
-                IsEnabled: true
-                Material: 39f56062-6cb3-42b4-b778-b03a1b04405a
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 52947f4c-11c2-46ab-bc36-87c028f756de
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart1
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: d26cc94a-6493-4206-931f-929c904a4109
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 6df5343e-5361-4b4c-aff4-510dafecb06e
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart2
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: bffa267e-fada-467d-8eec-dd7198f15ef8
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: fede364a-5277-44ab-8fa8-8d18770605fc
-                AsignedTo: SimplygonCastMaterial001
-                IsEnabled: true
-                Material: e5fcf2e6-52a9-4710-b7d5-c5b08cbf564b
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: a47d9b27-07db-4188-9a85-e899fd4f06db
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart2
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 48ae935f-13ea-4b12-b525-49fe4ddd2061
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 6958ee6b-9c84-45be-a031-a48eb7d28037
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart3
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 3cff33cb-7429-4528-b558-96b36e1b6f64
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 171100d9-3a20-4ece-9741-b1436d799774
-                AsignedTo: SimplygonCastMaterial003
-                IsEnabled: true
-                Material: fad3e5c5-948e-4614-ba57-c573cabf72be
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 6fb26598-ef0d-4e4e-8b92-183596b3eb92
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart3
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 73c58b8e-16d6-44ed-989c-e9f9ba2eef98
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 53bf0f26-5a26-4687-b05f-d48f9aa89a6c
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart4
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 06a980e8-82c1-40f8-9916-686270a6b0b5
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: dd57d369-881f-4ca3-8604-fa15bedf1e66
-                AsignedTo: SimplygonCastMaterial004
-                IsEnabled: true
-                Material: 53121f99-0a63-488a-a3fb-bd088ca68281
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: e145d240-e15b-4f9b-9179-4a6477b98340
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart4
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 744f4293-5212-41e9-8274-0ddba35b158f
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 390d966e-ff11-481e-b1b9-76729bd2ba83
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart5
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: be7e9651-68c3-4ba7-8c50-b8a916a6ee80
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: 6dc2c206-8805-43f6-a7fa-43eeefc32c1b
-                AsignedTo: SimplygonCastMaterial005
-                IsEnabled: true
-                Material: 453b9321-d614-45b9-a129-516c80cdba6c
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 68395170-874e-4f8d-b902-b1d4d4d347b5
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart5
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 295932af-235b-40e7-9971-25aa8d6beab9
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: 7114592e-db64-49b2-942c-5ffdee03923b
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: CityPart6
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 25ae9a76-ca35-4384-be0b-59cdae4089d8
-                IsEnabled: true
-                LocalOrientation:
-                  W: 0.707106829
-                  X: -0.707106709
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 0.0253999997
-                  Y: 0.0253999978
-                  Z: 0.0253999978
-              - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
-                Id: bb75255a-2f8b-4443-a6d4-e6838583d439
-                AsignedTo: SimplygonCastMaterial006
-                IsEnabled: true
-                Material: bf9b1a77-e8ac-4bf2-ac32-1e07e6a397f3
-              - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
-                Id: 21b338c5-7ee4-4d5b-bb09-2382336ac9f7
-                IsEnabled: true
-                Model: 853f09fd-70eb-4615-9265-505292a89a52
-                ModelMeshName: CityPart6
-              - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
-                Id: 74c6e500-5bda-4f7b-beea-a3c787c65935
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                OrderBias: 0
-                RenderFlags: CastShadows
-            Children: []
-            Id: aeb8d682-fb46-4add-8efc-d3a67fdc51a8
-        Id: 4dca868c-cb66-447c-a965-8271c9012ca2
-      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-        Name: pushPins
-        Tag: null
-        IsEnabled: true
-        IsStatic: false
-        Components:
-          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-            Id: da23635a-0e4a-4a18-b5d6-7a4c9ae66760
-            IsEnabled: true
-            LocalOrientation:
-              W: 1.0
-              X: 0.0
-              Y: 0.0
-              Z: 0.0
-            LocalPosition:
-              X: 0.0
-              Y: 0.0
-              Z: 0.0
-            LocalScale:
-              X: 1.0
-              Y: 1.0
-              Z: 1.0
-        Children:
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: pushpin1
-            Tag: Pushpin1
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: b56c9586-990d-4f93-ae47-09b80df1e376
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: -0.881318927
-                  Y: 0.929659724
-                  Z: 0.106541157
-                LocalScale:
-                  X: 0.300000012
-                  Y: 0.300000012
-                  Z: 0.300000012
-              - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                Id: 10aa6558-4ac3-4ae0-ae09-ec08006573cb
-                BillboardType: Axial_Orientation
-                FlipMode: None
-                IsEnabled: true
-                Origin:
-                  X: 0.5
-                  Y: 0.5
-                Rotation: 0.0
-                Sampler: null
-                Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                TintColor:
-                  A: 255
-                  B: 255
-                  G: 255
-                  R: 255
-              - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                Id: f9a14b48-e49f-4b72-8d1c-66ec9294cb70
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                OrderBias: 0
-                RenderFlags: CastShadows
-              - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                Id: 88fa8636-3252-4c90-8b1a-44403a160874
-                Center:
-                  X: 0.0
-                  Y: 0.0
-                Distance: 1.39999998
-                IsEnabled: true
-                SmoothTime: 0.5
-                UpdateOrder: 0.5
-            Children: []
-            Id: 5447ad1e-8812-4069-868d-8094f9918fc5
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: pushpin2
-            Tag: Pushpin2
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 4d172225-7f6d-4fa6-a9fd-83a8397e1663
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 1.87253129
-                  Y: 0.596113443
-                  Z: -1.92432725
-                LocalScale:
-                  X: 0.300000012
-                  Y: 0.300000012
-                  Z: 0.300000012
-              - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                Id: ea37e67d-9dcd-4aed-990a-e8cdc9c0cf99
-                BillboardType: Axial_Orientation
-                FlipMode: None
-                IsEnabled: true
-                Origin:
-                  X: 0.5
-                  Y: 0.5
-                Rotation: 0.0
-                Sampler: null
-                Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                TintColor:
-                  A: 255
-                  B: 255
-                  G: 255
-                  R: 255
-              - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                Id: 19795f10-96bd-4aff-9268-9cae7e7a2833
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                OrderBias: 0
-                RenderFlags: CastShadows
-              - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                Id: a89aaa30-0d93-40a7-9480-91906237684f
-                Center:
-                  X: 0.0
-                  Y: 0.0
-                Distance: 1.39999998
-                IsEnabled: true
-                SmoothTime: 0.5
-                UpdateOrder: 0.5
-            Children: []
-            Id: 91b91637-e1a4-473b-b87f-a0a63f7dd0a3
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: pushpin3
-            Tag: Pushpin3
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: 1174ffdd-b246-4e0c-82b1-678b051f4015
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.392346144
-                  Y: 0.861322284
-                  Z: 2.21716785
-                LocalScale:
-                  X: 0.300000012
-                  Y: 0.300000012
-                  Z: 0.300000012
-              - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                Id: 7b2e0113-d8d8-42a6-a5ea-c6402171a769
-                BillboardType: Axial_Orientation
-                FlipMode: None
-                IsEnabled: true
-                Origin:
-                  X: 0.5
-                  Y: 0.5
-                Rotation: 0.0
-                Sampler: null
-                Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                TintColor:
-                  A: 255
-                  B: 255
-                  G: 255
-                  R: 255
-              - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                Id: 9fa4155b-7320-44d7-82b6-cf2f7908e65f
-                DebugBoundingbox: true
-                IsCullingEnabled: true
-                IsEnabled: true
-                Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                OrderBias: 0
-                RenderFlags: CastShadows
-              - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                Id: 990e484f-4cdb-4ca7-89b2-d01b4d5e0ee5
-                Center:
-                  X: 0.0
-                  Y: 0.0
-                Distance: 1.39999998
-                IsEnabled: true
-                SmoothTime: 0.5
-                UpdateOrder: 0.5
-            Children: []
-            Id: 0cfa3944-175f-484c-a409-0a434f2302ac
-        Id: 5b84fd37-deaf-472e-acb7-86352a5df1e2
-    Id: c3f099e1-f651-473a-ad43-6dc08e64b9be
-  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-    Name: postProcesingVolume
-    Tag: null
-    IsEnabled: false
-    IsStatic: false
-    Components:
-      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-        Id: 0b91e676-73b3-45de-ab11-65805d86592a
-        IsEnabled: true
-        LocalOrientation:
-          W: 1.0
           X: 0.0
           Y: 0.0
           Z: 0.0
-        LocalPosition:
-          X: 0.356696963
-          Y: -1.23558009
-          Z: -0.322365761
         LocalScale:
           X: 1.0
           Y: 1.0
           Z: 1.0
-      - !WaveEngine.Components.Graphics3D.PostProcessingGraphRenderer,WaveEngine.Components
-        Id: 921eb7df-0ef5-49cd-9339-d54e704986db
-        DebugBoundingbox: true
-        IsCullingEnabled: true
+      - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+        Id: 6ffcdd1b-0e44-40c8-a667-7a4cede7edb8
+        CcdMotionThreshold: 0.0
+        CcdSweptSphereRadius: 0.200000003
+        CollisionCategories: Cat1
+        Friction: 0.5
         IsEnabled: true
-        IsGlobal: true
-        LayerOrder: 10
-        OrderBias: 0
-        RenderFlags: CastShadows
-        ppGraph: dd593717-0922-4f58-9c85-c309658eff03
-      - !WaveEngine.Framework.Physics3D.BoxCollider3D,WaveEngine.Framework
-        Id: 2bd31ba3-72d9-48c1-9785-3ccc2e151bad
+        IsSensor: false
+        MaskBits: Cat1
+        Restitution: -0.0549999923
+        RollingFriction: 0.0
+        UpdateOrder: 0.5
+      - !WaveEngine.Framework.Physics3D.CylinderCollider3D,WaveEngine.Framework
+        Id: e36bc2b9-e748-4566-ba6e-78182a67c1e9
+        Height: 0.0
         IsEnabled: true
         Margin: 0.0399999991
         Offset:
@@ -1125,12 +314,936 @@ Items:
           X: 0.0
           Y: 0.0
           Z: 0.0
-        Size:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
-    Children: []
-    Id: ffe53dde-6a42-4225-bb15-047cf6116c40
+        Radius: 1.60000002
+      - !SmartCityDemo.Components.MapTranslationComponent,SmartCityDemo
+        Id: 4e4a8fbf-1fcf-4dda-b47a-04ccdac87082
+        ClampMaxPosition:
+          X: 1.79999995
+          Y: 0.0
+          Z: 2.5
+        ClampMinPosition:
+          X: -1.5
+          Y: 0.0
+          Z: -5.0
+        IsEnabled: true
+        PushpinSmooth: 0.300000012
+        Smooth: 0.100000001
+        UpdateOrder: 0.5
+    Children:
+      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+        Name: cityRoot
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+            Id: bf19a1a3-2b98-48e2-96ce-4ec96cbda2d6
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: -1.01742077
+              Y: 0.0
+              Z: -0.427491188
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+        Children:
+          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+            Name: pushPins
+            Tag: null
+            IsEnabled: true
+            IsStatic: false
+            Components:
+              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                Id: da23635a-0e4a-4a18-b5d6-7a4c9ae66760
+                IsEnabled: true
+                LocalOrientation:
+                  W: 1.0
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalPosition:
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+            Children:
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: pushpin1
+                Tag: Pushpin1
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: b56c9586-990d-4f93-ae47-09b80df1e376
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: -1.10619378
+                      Y: 1.57548368
+                      Z: 2.26907969
+                    LocalScale:
+                      X: 0.300000012
+                      Y: 0.300000012
+                      Z: 0.300000012
+                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                    Id: 10aa6558-4ac3-4ae0-ae09-ec08006573cb
+                    BillboardType: Axial_Orientation
+                    FlipMode: None
+                    IsEnabled: true
+                    Origin:
+                      X: 0.5
+                      Y: 0.5
+                    Rotation: 0.0
+                    Sampler: null
+                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                    TintColor:
+                      A: 255
+                      B: 255
+                      G: 255
+                      R: 255
+                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                    Id: f9a14b48-e49f-4b72-8d1c-66ec9294cb70
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                    Id: 88fa8636-3252-4c90-8b1a-44403a160874
+                    Center:
+                      X: 0.0
+                      Y: 0.0
+                    Distance: 1.39999998
+                    IsEnabled: true
+                    SmoothTime: 0.200000003
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                    Id: 06927ae1-169d-45dc-9c86-91972d6b2486
+                    CcdMotionThreshold: 0.0
+                    CcdSweptSphereRadius: 0.200000003
+                    CollisionCategories: Cat2
+                    Friction: 0.5
+                    IsEnabled: true
+                    IsSensor: false
+                    MaskBits: All
+                    Restitution: 0.0
+                    RollingFriction: 0.0
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                    Id: d1d1e9d4-9941-47a4-8354-0b8617086a13
+                    IsEnabled: true
+                    Margin: 0.0399999991
+                    Offset:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    Radius: 0.5
+                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                    Id: 204e6426-c64c-42b5-85cd-34489f3e5f8f
+                    IsEnabled: true
+                Children: []
+                Id: 5447ad1e-8812-4069-868d-8094f9918fc5
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: pushpin2
+                Tag: Pushpin2
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 4d172225-7f6d-4fa6-a9fd-83a8397e1663
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 1.65935755
+                      Y: 1.2419374
+                      Z: 0.193231136
+                    LocalScale:
+                      X: 0.300000012
+                      Y: 0.300000012
+                      Z: 0.300000012
+                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                    Id: ea37e67d-9dcd-4aed-990a-e8cdc9c0cf99
+                    BillboardType: Axial_Orientation
+                    FlipMode: None
+                    IsEnabled: true
+                    Origin:
+                      X: 0.5
+                      Y: 0.5
+                    Rotation: 0.0
+                    Sampler: null
+                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                    TintColor:
+                      A: 255
+                      B: 255
+                      G: 255
+                      R: 255
+                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                    Id: 19795f10-96bd-4aff-9268-9cae7e7a2833
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                    Id: a89aaa30-0d93-40a7-9480-91906237684f
+                    Center:
+                      X: 0.0
+                      Y: 0.0
+                    Distance: 1.39999998
+                    IsEnabled: true
+                    SmoothTime: 0.200000003
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                    Id: 12b52468-6671-471f-b0ab-5f742c68b498
+                    CcdMotionThreshold: 0.0
+                    CcdSweptSphereRadius: 0.200000003
+                    CollisionCategories: Cat2
+                    Friction: 0.5
+                    IsEnabled: true
+                    IsSensor: false
+                    MaskBits: All
+                    Restitution: 0.0
+                    RollingFriction: 0.0
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                    Id: 56e9a0f6-827c-4090-b257-d85603847124
+                    IsEnabled: true
+                    Margin: 0.0399999991
+                    Offset:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    Radius: 0.5
+                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                    Id: 99cdd413-e328-4599-919e-a779d19ae475
+                    IsEnabled: true
+                Children: []
+                Id: 91b91637-e1a4-473b-b87f-a0a63f7dd0a3
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: pushpin3
+                Tag: Pushpin3
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 1174ffdd-b246-4e0c-82b1-678b051f4015
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.16747129
+                      Y: 1.50714624
+                      Z: 4.37970638
+                    LocalScale:
+                      X: 0.300000012
+                      Y: 0.300000012
+                      Z: 0.300000012
+                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                    Id: 7b2e0113-d8d8-42a6-a5ea-c6402171a769
+                    BillboardType: Axial_Orientation
+                    FlipMode: None
+                    IsEnabled: true
+                    Origin:
+                      X: 0.5
+                      Y: 0.5
+                    Rotation: 0.0
+                    Sampler: null
+                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                    TintColor:
+                      A: 255
+                      B: 255
+                      G: 255
+                      R: 255
+                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                    Id: 9fa4155b-7320-44d7-82b6-cf2f7908e65f
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                    Id: 990e484f-4cdb-4ca7-89b2-d01b4d5e0ee5
+                    Center:
+                      X: 0.0
+                      Y: 0.0
+                    Distance: 1.39999998
+                    IsEnabled: true
+                    SmoothTime: 0.200000003
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                    Id: 51e4534b-c723-49c1-8e0b-62af4d8b2d78
+                    CcdMotionThreshold: 0.0
+                    CcdSweptSphereRadius: 0.200000003
+                    CollisionCategories: Cat2
+                    Friction: 0.5
+                    IsEnabled: true
+                    IsSensor: false
+                    MaskBits: All
+                    Restitution: 0.0
+                    RollingFriction: 0.0
+                    UpdateOrder: 0.5
+                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                    Id: d49be92a-4d7d-4cfe-9346-1f44cc87abc4
+                    IsEnabled: true
+                    Margin: 0.0399999991
+                    Offset:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    Radius: 0.5
+                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                    Id: a61f014b-afc5-40d3-bd70-65cb1d9739b6
+                    IsEnabled: true
+                Children: []
+                Id: 0cfa3944-175f-484c-a409-0a434f2302ac
+            Id: 5b84fd37-deaf-472e-acb7-86352a5df1e2
+          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+            Name: cityNonClipped
+            Tag: null
+            IsEnabled: false
+            IsStatic: false
+            Components:
+              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                Id: 7046fc72-c818-4ee6-941b-82f6d90e7391
+                IsEnabled: true
+                LocalOrientation:
+                  W: 1.0
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalPosition:
+                  X: -0.416000009
+                  Y: 0.889999986
+                  Z: 3.15100002
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+            Children:
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart0
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 6c619ae3-a467-409f-bf77-9a029af5e577
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 79bef0c8-2dc0-405e-81d8-52ba6f939cc5
+                    AsignedTo: SimplygonCastMaterial002
+                    IsEnabled: true
+                    Material: 05c506ca-839d-4e71-95da-3b16cac012b5
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: feb51c28-d8ec-43f2-a3e0-9d93ce1947c0
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart0
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: f4feb789-20bc-4fb4-9c07-09bacb4e52b5
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 3ee601b7-abc1-4c43-8dd4-f61f0de71b37
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart1
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 9662ce5d-4a1e-4b6a-a1f9-a1f65d8101c5
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 56655d06-1a55-4335-8a10-25d442903a7a
+                    AsignedTo: SimplygonCastMaterial
+                    IsEnabled: true
+                    Material: 39f56062-6cb3-42b4-b778-b03a1b04405a
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 52947f4c-11c2-46ab-bc36-87c028f756de
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart1
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: d26cc94a-6493-4206-931f-929c904a4109
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 6df5343e-5361-4b4c-aff4-510dafecb06e
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart2
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: bffa267e-fada-467d-8eec-dd7198f15ef8
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: fede364a-5277-44ab-8fa8-8d18770605fc
+                    AsignedTo: SimplygonCastMaterial001
+                    IsEnabled: true
+                    Material: e5fcf2e6-52a9-4710-b7d5-c5b08cbf564b
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: a47d9b27-07db-4188-9a85-e899fd4f06db
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart2
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 48ae935f-13ea-4b12-b525-49fe4ddd2061
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 6958ee6b-9c84-45be-a031-a48eb7d28037
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart3
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 3cff33cb-7429-4528-b558-96b36e1b6f64
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 171100d9-3a20-4ece-9741-b1436d799774
+                    AsignedTo: SimplygonCastMaterial003
+                    IsEnabled: true
+                    Material: fad3e5c5-948e-4614-ba57-c573cabf72be
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 6fb26598-ef0d-4e4e-8b92-183596b3eb92
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart3
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 73c58b8e-16d6-44ed-989c-e9f9ba2eef98
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 53bf0f26-5a26-4687-b05f-d48f9aa89a6c
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart4
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 06a980e8-82c1-40f8-9916-686270a6b0b5
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: dd57d369-881f-4ca3-8604-fa15bedf1e66
+                    AsignedTo: SimplygonCastMaterial004
+                    IsEnabled: true
+                    Material: 53121f99-0a63-488a-a3fb-bd088ca68281
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: e145d240-e15b-4f9b-9179-4a6477b98340
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart4
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 744f4293-5212-41e9-8274-0ddba35b158f
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 390d966e-ff11-481e-b1b9-76729bd2ba83
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart5
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: be7e9651-68c3-4ba7-8c50-b8a916a6ee80
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 6dc2c206-8805-43f6-a7fa-43eeefc32c1b
+                    AsignedTo: SimplygonCastMaterial005
+                    IsEnabled: true
+                    Material: 453b9321-d614-45b9-a129-516c80cdba6c
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 68395170-874e-4f8d-b902-b1d4d4d347b5
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart5
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 295932af-235b-40e7-9971-25aa8d6beab9
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 7114592e-db64-49b2-942c-5ffdee03923b
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart6
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 25ae9a76-ca35-4384-be0b-59cdae4089d8
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: bb75255a-2f8b-4443-a6d4-e6838583d439
+                    AsignedTo: SimplygonCastMaterial006
+                    IsEnabled: true
+                    Material: bf9b1a77-e8ac-4bf2-ac32-1e07e6a397f3
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 21b338c5-7ee4-4d5b-bb09-2382336ac9f7
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart6
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 74c6e500-5bda-4f7b-beea-a3c787c65935
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: aeb8d682-fb46-4add-8efc-d3a67fdc51a8
+            Id: 4dca868c-cb66-447c-a965-8271c9012ca2
+          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+            Name: cityClipped
+            Tag: null
+            IsEnabled: true
+            IsStatic: false
+            Components:
+              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                Id: d25197ad-ebb2-42b0-b28a-c9e59f336700
+                IsEnabled: true
+                LocalOrientation:
+                  W: 1.0
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalPosition:
+                  X: -0.415874898
+                  Y: 0.890028
+                  Z: 3.15053844
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+            Children:
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart0
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: a03b4c4e-5016-4fa5-b4e3-3c8985a263a5
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 4315c6c1-e5c1-4736-ac02-405f9e202582
+                    AsignedTo: SimplygonCastMaterial002
+                    IsEnabled: true
+                    Material: 7968617e-d809-43f1-917a-71bd024ad711
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 164b74d3-e062-4a4a-925f-030e82b293f9
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart0
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: ba483158-8035-4c29-9bb3-d85e92928d68
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: c6e5d86d-10d7-4769-acfd-800528cc5e5d
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart1
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: dbc0a019-6563-42a6-ac12-ac86202c9e40
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 241ac538-0d74-4f08-9836-82a647e544ca
+                    AsignedTo: SimplygonCastMaterial
+                    IsEnabled: true
+                    Material: 62bec0fa-8b47-468d-8d4c-629ce3071a17
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 0d383828-b648-456f-9e0f-70b92bd8cf80
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart1
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 2f3261aa-0df6-494b-9561-fc02bf0eeea9
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 4a9f91ad-f2c1-4b60-9703-d34950a5093e
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart2
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 708e10ca-46a9-4496-924e-2c4b208242b5
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: d525fb15-e2d5-49a9-b0a3-ba0e1ccaf343
+                    AsignedTo: SimplygonCastMaterial001
+                    IsEnabled: true
+                    Material: 79d0f58e-5ace-42c8-82af-03fed9bd1fed
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 940ea88d-affe-4fcf-b8a9-db56b7f118d4
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart2
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 1b76fc4c-2deb-442c-8285-e9b0533b36d5
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 6aff44a8-7721-4395-9fda-43456e2fcb1d
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart3
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: f7dd715b-5f02-4abb-bbba-a43a8fabbb00
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 435bbe60-c55b-4514-9a3f-c6805f5ec250
+                    AsignedTo: SimplygonCastMaterial003
+                    IsEnabled: true
+                    Material: 9ee97618-eacd-490f-b6e7-6dd77f88081d
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: f6088599-e4fb-4102-a191-dc5952b47b79
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart3
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: a63340b1-5ea4-4296-b96d-a95b5a8a45a9
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 1366147e-3258-40da-a206-9579eb95e486
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart4
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 22c982e5-c1d8-432b-8d22-6e6dd8bf1d8d
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 74bb49c0-e723-4513-86b7-0e2a7a27da15
+                    AsignedTo: SimplygonCastMaterial004
+                    IsEnabled: true
+                    Material: 8597370f-beb1-4069-84ab-1c69135a7c5b
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 05a52852-74e8-43ec-a6ce-7d7ba4e887a3
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart4
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 470304f1-94fa-429a-b93f-e675d49958f0
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 06f37b2f-5916-4720-9bbf-5ad4f150dcce
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart5
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 9899f783-f16f-483c-beb9-005cc8ecc00b
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 951e77f4-ef5e-4e21-9ac4-03f30c67266e
+                    AsignedTo: SimplygonCastMaterial005
+                    IsEnabled: true
+                    Material: e38724c5-fc75-4ab8-bbcd-2fdd05c3ac51
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 28b936f3-a3c5-48c3-879a-b278d8250279
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart5
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 353eb7e6-d7d2-420b-ad08-ed65d89da493
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: daec415e-4131-4f3e-903d-2e047e16b6b2
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: CityPart6
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: 45be33d2-a972-48e3-9eb6-a67fae34f026
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106829
+                      X: -0.707106709
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 0.0253999997
+                      Y: 0.0253999978
+                      Z: 0.0253999978
+                  - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                    Id: 2ccf1edd-1e8b-44ee-86f9-29417504d5bd
+                    AsignedTo: SimplygonCastMaterial006
+                    IsEnabled: true
+                    Material: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
+                  - !WaveEngine.Components.Graphics3D.MeshComponent,WaveEngine.Framework
+                    Id: 9916680f-b21e-4d83-8bf8-40bc771fe680
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart6
+                  - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                    Id: 04787b71-eacf-4b57-9e35-b201d4a710f3
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: cf45f66e-bda0-4b15-a84f-f92a7fc96921
+            Id: 666eb6af-35fa-4b7b-b04c-9188b4a35873
+        Id: c3f099e1-f651-473a-ad43-6dc08e64b9be
+    Id: 039777ed-bf41-4ff6-853f-d347de9ec0b2
   - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
     Name: indicators
     Tag: null
@@ -1423,8 +1536,8 @@ Items:
           Z: 0.0
         LocalPosition:
           X: 0.0
-          Y: 0.0
-          Z: 0.0
+          Y: -0.0500000007
+          Z: 6.17411189E-09
         LocalScale:
           X: 1.0
           Y: 1.0

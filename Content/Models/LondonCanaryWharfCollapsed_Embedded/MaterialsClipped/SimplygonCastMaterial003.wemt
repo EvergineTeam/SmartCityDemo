@@ -6,20 +6,23 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 8803dd31-83a9-464a-b02e-fb1bf3a06d28
+  Id: 1b46eb20-3da6-4a53-9239-6de86a67f245
   ActiveDirectives:
     - DIFF
   AllowInstancing: false
   EffectID: 236d6e83-3777-43e0-ae50-b43288d4d87d
-  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  Layer: 97eeb37e-cf4a-4f52-9bce-11a26e455dad
   OrderBias: 0
   Parameters:
     - Name: WorldViewProj
       Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
-      ValueByteArray: hXWSQAAAAAAAAAAAAAAAAAAAAACYMopADf9kvzD5ZL8AAAAAmjIKwAv/5L8u+eS/AAAAAHmCGjUf7ItAvRuPQA==
+      ValueByteArray: R1SBQAAAAAAAAAAAAAAAAAAAAACYMopADf9kvzD5ZL8AAAAAmjIKwAv/5L8u+eS/AAAAAHmCGjUf7ItAvRuPQA==
     - Name: World
       Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
       ValueByteArray: AAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAPw==
+    - Name: ViewProj
+      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      ValueByteArray: R1QBQAAAAAAAAAAAAAAAAAAAAACYMgpADf/kvjD55L4AAAAAmjKKvwv/ZL8u+WS/AAAAAHmCGjUf7ItAvRuPQA==
     - Name: Center
       Type: WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAA
@@ -28,15 +31,14 @@ MaterialInfo:
       ValueByteArray: AADAPw==
     - Name: StartBorder
       Type: System.Single
-      ValueByteArray: MzOzPw==
+      ValueByteArray: mpm5Pw==
+    - Name: MinLevel
+      Type: System.Single
+      ValueByteArray: AAAAAA==
   Samplers:
-    - ID: 00000000-0000-0000-0000-000000000000
-      Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
   Textures:
     - ID: ead60f73-b9b0-417f-b6f0-648307101ca0
       Name: BaseColorTexture
-    - ID: 117fcdd5-86c6-4ea7-a3b4-348c5c135a88
-      Name: GradientTexture
 Profiles: {}

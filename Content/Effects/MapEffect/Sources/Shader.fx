@@ -18,10 +18,8 @@
 	};
 	
 	Texture2D BaseColorTexture : register(t0);
-	Texture2D GradientTexture  : register(t1);
 	
 	SamplerState BaseColorSampler : register(s0);
-	SamplerState GradientSampler : register(s1);
 
 [End_ResourceLayout]
 
@@ -123,20 +121,14 @@
 			discard;
 		}
 		
-		float4 color = BaseColorTexture.Sample(BaseColorSampler, input.Tex);
+		float4 color = BaseColorTexture.Sample(BaseColorSampler, input.Tex);		
 		
-		/*if(distanceToCenter > StartBorder)
-		{
-			float coordinate = (distanceToCenter - StartBorder)/(Radius - StartBorder);
-			float4 border = GradientTexture.Sample(GradientSampler, float2(coordinate, 0));				
-			
-			color = lerp(color, border, border.a);
-		}*/	
-		
-
 #if !GAMMA_COLORSPACE
 		color = GammaToLinear(color);
 #endif		
+
+		color.a = 1 - saturate((distanceToCenter - StartBorder)/(Radius - StartBorder));
+		color.rgb *= color.a;
 		
 		return color;
 	}
