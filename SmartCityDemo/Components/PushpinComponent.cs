@@ -10,5 +10,8 @@ namespace SmartCityDemo.Components
     {
         [BindComponent]
         public Transform3D Transform;
+
+        [BindComponent(source: BindComponentSource.Parents)]
+        public BuildingComponent BuildingComponent;
     }
 }

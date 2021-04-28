@@ -15,10 +15,11 @@ namespace SmartCityDemo.Components
     public class MapTranslationComponent : Behavior
     {
         [BindComponent(source: BindComponentSource.ChildrenSkipOwner)]
-        private Transform3D translationPivot;
+        private Transform3D translationPivot = null;
 
         [BindComponent(source: BindComponentSource.Scene)]
-        private Camera3D camera;
+        private Camera3D camera = null;
+
         private MouseDispatcher mouseDispatcher;
 
         private bool translationInProgress;
@@ -35,6 +36,7 @@ namespace SmartCityDemo.Components
         public float PushpinSmooth { get; set; } = 0.3f;
 
         private float currentSmooth;
+        private BuildingComponent currentSelectedBuilding;
 
         protected override void OnActivated()
         {
@@ -73,16 +75,15 @@ namespace SmartCityDemo.Components
                 this.initPosition = this.translationPivot.Position;
                 var body = hitResult.PhysicBody.UserData as StaticBody3D;
                 var pushpin = body.Owner.FindComponent<PushpinComponent>();
+
                 if (pushpin != null)
                 {
-                    var pushpinPosition = this.translationPivot.Position - pushpin.Transform.Position;
-                    pushpinPosition.Y = 0;
-
-                    this.JumpToPosition(pushpinPosition);
+                    this.SelectBuilding(pushpin.BuildingComponent);
                     this.currentSmooth = this.PushpinSmooth;
                 }
                 else
                 {
+                    this.UnselectBuilding();
                     this.translationInProgress = true;
                     this.currentSmooth = this.Smooth;
                     this.initTouchPosition = ray.IntersectionYPlane(0);
@@ -95,8 +96,7 @@ namespace SmartCityDemo.Components
             if (this.translationInProgress)
             {
                 this.camera.CalculateRay(ref screenPos, out var ray);
-                var currentTouchPosition = ray.IntersectionYPlane(0);
-                
+                var currentTouchPosition = ray.IntersectionYPlane(0);                
 
                 // final position
                 var finalPosition = this.initPosition + (currentTouchPosition - this.initTouchPosition);
@@ -108,6 +108,21 @@ namespace SmartCityDemo.Components
         private void EndTranslation()
         {
             this.translationInProgress = false;
+        }
+
+        public void SelectBuilding(BuildingComponent building)
+        {
+            this.currentSelectedBuilding = building;
+            this.currentSelectedBuilding.Select();
+
+            var newPosition = this.translationPivot.Position - building.Transform.Position;
+            this.JumpToPosition(newPosition);
+        }
+
+        private void UnselectBuilding()
+        {
+            this.currentSelectedBuilding?.Unselect();
+            this.currentSelectedBuilding = null;
         }
 
         public void JumpToPosition(Vector3 newPosition)

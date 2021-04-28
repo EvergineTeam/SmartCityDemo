@@ -231,7 +231,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 6e3dc72c-a3c1-4c40-9ecd-fe5e65b58b27
+        Material: 4ca4c49f-cd33-449f-960a-77518720c4f0
       - !WaveEngine.Components.Graphics3D.SphereMesh,WaveEngine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
@@ -353,273 +353,6 @@ Items:
               Y: 1.0
               Z: 1.0
         Children:
-          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-            Name: pushPins
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                Id: da23635a-0e4a-4a18-b5d6-7a4c9ae66760
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalScale:
-                  X: 1.0
-                  Y: 1.0
-                  Z: 1.0
-            Children:
-              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-                Name: pushpin1
-                Tag: Pushpin1
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                    Id: b56c9586-990d-4f93-ae47-09b80df1e376
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 1.0
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: -1.10619378
-                      Y: 1.57548368
-                      Z: 2.26907969
-                    LocalScale:
-                      X: 0.300000012
-                      Y: 0.300000012
-                      Z: 0.300000012
-                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                    Id: 10aa6558-4ac3-4ae0-ae09-ec08006573cb
-                    BillboardType: Axial_Orientation
-                    FlipMode: None
-                    IsEnabled: true
-                    Origin:
-                      X: 0.5
-                      Y: 0.5
-                    Rotation: 0.0
-                    Sampler: null
-                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                    TintColor:
-                      A: 255
-                      B: 255
-                      G: 255
-                      R: 255
-                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                    Id: f9a14b48-e49f-4b72-8d1c-66ec9294cb70
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                    Id: 88fa8636-3252-4c90-8b1a-44403a160874
-                    Center:
-                      X: 0.0
-                      Y: 0.0
-                    Distance: 1.39999998
-                    IsEnabled: true
-                    SmoothTime: 0.200000003
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
-                    Id: 06927ae1-169d-45dc-9c86-91972d6b2486
-                    CcdMotionThreshold: 0.0
-                    CcdSweptSphereRadius: 0.200000003
-                    CollisionCategories: Cat2
-                    Friction: 0.5
-                    IsEnabled: true
-                    IsSensor: false
-                    MaskBits: All
-                    Restitution: 0.0
-                    RollingFriction: 0.0
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
-                    Id: d1d1e9d4-9941-47a4-8354-0b8617086a13
-                    IsEnabled: true
-                    Margin: 0.0399999991
-                    Offset:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    Radius: 0.5
-                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
-                    Id: 204e6426-c64c-42b5-85cd-34489f3e5f8f
-                    IsEnabled: true
-                Children: []
-                Id: 5447ad1e-8812-4069-868d-8094f9918fc5
-              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-                Name: pushpin2
-                Tag: Pushpin2
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                    Id: 4d172225-7f6d-4fa6-a9fd-83a8397e1663
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 1.0
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 1.65935755
-                      Y: 1.2419374
-                      Z: 0.193231136
-                    LocalScale:
-                      X: 0.300000012
-                      Y: 0.300000012
-                      Z: 0.300000012
-                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                    Id: ea37e67d-9dcd-4aed-990a-e8cdc9c0cf99
-                    BillboardType: Axial_Orientation
-                    FlipMode: None
-                    IsEnabled: true
-                    Origin:
-                      X: 0.5
-                      Y: 0.5
-                    Rotation: 0.0
-                    Sampler: null
-                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                    TintColor:
-                      A: 255
-                      B: 255
-                      G: 255
-                      R: 255
-                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                    Id: 19795f10-96bd-4aff-9268-9cae7e7a2833
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                    Id: a89aaa30-0d93-40a7-9480-91906237684f
-                    Center:
-                      X: 0.0
-                      Y: 0.0
-                    Distance: 1.39999998
-                    IsEnabled: true
-                    SmoothTime: 0.200000003
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
-                    Id: 12b52468-6671-471f-b0ab-5f742c68b498
-                    CcdMotionThreshold: 0.0
-                    CcdSweptSphereRadius: 0.200000003
-                    CollisionCategories: Cat2
-                    Friction: 0.5
-                    IsEnabled: true
-                    IsSensor: false
-                    MaskBits: All
-                    Restitution: 0.0
-                    RollingFriction: 0.0
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
-                    Id: 56e9a0f6-827c-4090-b257-d85603847124
-                    IsEnabled: true
-                    Margin: 0.0399999991
-                    Offset:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    Radius: 0.5
-                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
-                    Id: 99cdd413-e328-4599-919e-a779d19ae475
-                    IsEnabled: true
-                Children: []
-                Id: 91b91637-e1a4-473b-b87f-a0a63f7dd0a3
-              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
-                Name: pushpin3
-                Tag: Pushpin3
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
-                    Id: 1174ffdd-b246-4e0c-82b1-678b051f4015
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 1.0
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.16747129
-                      Y: 1.50714624
-                      Z: 4.37970638
-                    LocalScale:
-                      X: 0.300000012
-                      Y: 0.300000012
-                      Z: 0.300000012
-                  - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
-                    Id: 7b2e0113-d8d8-42a6-a5ea-c6402171a769
-                    BillboardType: Axial_Orientation
-                    FlipMode: None
-                    IsEnabled: true
-                    Origin:
-                      X: 0.5
-                      Y: 0.5
-                    Rotation: 0.0
-                    Sampler: null
-                    Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
-                    TintColor:
-                      A: 255
-                      B: 255
-                      G: 255
-                      R: 255
-                  - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
-                    Id: 9fa4155b-7320-44d7-82b6-cf2f7908e65f
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                  - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
-                    Id: 990e484f-4cdb-4ca7-89b2-d01b4d5e0ee5
-                    Center:
-                      X: 0.0
-                      Y: 0.0
-                    Distance: 1.39999998
-                    IsEnabled: true
-                    SmoothTime: 0.200000003
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
-                    Id: 51e4534b-c723-49c1-8e0b-62af4d8b2d78
-                    CcdMotionThreshold: 0.0
-                    CcdSweptSphereRadius: 0.200000003
-                    CollisionCategories: Cat2
-                    Friction: 0.5
-                    IsEnabled: true
-                    IsSensor: false
-                    MaskBits: All
-                    Restitution: 0.0
-                    RollingFriction: 0.0
-                    UpdateOrder: 0.5
-                  - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
-                    Id: d49be92a-4d7d-4cfe-9346-1f44cc87abc4
-                    IsEnabled: true
-                    Margin: 0.0399999991
-                    Offset:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    Radius: 0.5
-                  - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
-                    Id: a61f014b-afc5-40d3-bd70-65cb1d9739b6
-                    IsEnabled: true
-                Children: []
-                Id: 0cfa3944-175f-484c-a409-0a434f2302ac
-            Id: 5b84fd37-deaf-472e-acb7-86352a5df1e2
           - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
             Name: cityNonClipped
             Tag: null
@@ -1242,6 +975,603 @@ Items:
                 Children: []
                 Id: cf45f66e-bda0-4b15-a84f-f92a7fc96921
             Id: 666eb6af-35fa-4b7b-b04c-9188b4a35873
+          - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+            Name: buildings
+            Tag: null
+            IsEnabled: true
+            IsStatic: false
+            Components:
+              - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                Id: 9234b302-f01e-4776-b743-c67bc832dbaa
+                IsEnabled: true
+                LocalOrientation:
+                  W: 1.0
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalPosition:
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+            Children:
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: building1
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: ebefe148-fcdf-4efd-aebd-a1677b6f0260
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: -1.11500001
+                      Y: 0.0
+                      Z: 2.25999999
+                    LocalScale:
+                      X: 1.0
+                      Y: 1.0
+                      Z: 1.0
+                  - !SmartCityDemo.Components.BuildingComponent,SmartCityDemo
+                    Id: d7622e25-564c-4100-a731-fe73c26e1e62
+                    IsEnabled: true
+                Children:
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: pushpin1
+                    Tag: Pushpin1
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: b56c9586-990d-4f93-ae47-09b80df1e376
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.00880622864
+                          Y: 1.57548368
+                          Z: 0.00907969475
+                        LocalScale:
+                          X: 0.300000012
+                          Y: 0.300000012
+                          Z: 0.300000012
+                      - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                        Id: 10aa6558-4ac3-4ae0-ae09-ec08006573cb
+                        BillboardType: Axial_Orientation
+                        FlipMode: None
+                        IsEnabled: true
+                        Origin:
+                          X: 0.5
+                          Y: 0.5
+                        Rotation: 0.0
+                        Sampler: null
+                        Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                        TintColor:
+                          A: 255
+                          B: 255
+                          G: 255
+                          R: 255
+                      - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                        Id: f9a14b48-e49f-4b72-8d1c-66ec9294cb70
+                        DebugBoundingbox: true
+                        IsCullingEnabled: true
+                        IsEnabled: true
+                        Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                        OrderBias: 0
+                        RenderFlags: CastShadows
+                      - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                        Id: 88fa8636-3252-4c90-8b1a-44403a160874
+                        Center:
+                          X: 0.0
+                          Y: 0.0
+                        Distance: 1.39999998
+                        IsEnabled: true
+                        SmoothTime: 0.200000003
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                        Id: 06927ae1-169d-45dc-9c86-91972d6b2486
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.200000003
+                        CollisionCategories: Cat2
+                        Friction: 0.5
+                        IsEnabled: true
+                        IsSensor: false
+                        MaskBits: All
+                        Restitution: 0.0
+                        RollingFriction: 0.0
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                        Id: d1d1e9d4-9941-47a4-8354-0b8617086a13
+                        IsEnabled: true
+                        Margin: 0.0399999991
+                        Offset:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        Radius: 0.5
+                      - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                        Id: 204e6426-c64c-42b5-85cd-34489f3e5f8f
+                        IsEnabled: true
+                    Children: []
+                    Id: 5447ad1e-8812-4069-868d-8094f9918fc5
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: buildingPivot
+                    Tag: null
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: 4662fe00-e297-40fb-a007-95fa238e4f06
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalScale:
+                          X: 1.0
+                          Y: 1.0
+                          Z: 1.0
+                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                        Id: 2c532c82-ab2d-4730-aa3c-9492c559a3c7
+                        AnimationTime: 0.5
+                        IsEnabled: true
+                    Children:
+                      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                        Name: buildingVisual1
+                        Tag: null
+                        IsEnabled: true
+                        IsStatic: false
+                        Components:
+                          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                            Id: f5a3e2cf-03fc-4543-81d3-d5322e612694
+                            IsEnabled: true
+                            LocalOrientation:
+                              W: 0.996032894
+                              X: 0.0
+                              Y: -0.0889857635
+                              Z: 0.0
+                            LocalPosition:
+                              X: -0.000118017197
+                              Y: 0.659107924
+                              Z: -0.000390052795
+                            LocalScale:
+                              X: 0.321700096
+                              Y: 1.30999994
+                              Z: 0.33452037
+                          - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                            Id: 0328d58e-9d1d-450b-8c44-e30c8004ba81
+                            AsignedTo: Default
+                            IsEnabled: true
+                            Material: 6a5906ee-6a61-4d86-baeb-484577cc97a4
+                          - !WaveEngine.Components.Graphics3D.CubeMesh,WaveEngine.Components
+                            Id: 4d839820-c7f6-4112-9e2f-2602c7798711
+                            InitialU: 0.0
+                            InitialV: 0.0
+                            IsEnabled: true
+                            Size: 0.995000005
+                            UTile: 0.99000001
+                            UVHorizontalFlip: false
+                            UVVerticalFlip: false
+                            YTile: 1.0
+                          - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                            Id: 9d80d6c5-cafc-4772-a732-d2c28a446b6a
+                            DebugBoundingbox: true
+                            IsCullingEnabled: true
+                            IsEnabled: true
+                            OrderBias: 0
+                            RenderFlags: CastShadows
+                          - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                            Id: 7c13fa97-9849-4aec-a0b4-482a610b5c19
+                            Center:
+                              X: 0.0
+                              Y: 0.0
+                            Distance: 1.39999998
+                            IsEnabled: true
+                            SmoothTime: 0.0199999996
+                            UpdateOrder: 0.5
+                        Children: []
+                        Id: a68f4c97-ffa6-4f1d-964f-9284556abcc0
+                    Id: 6f11aa9b-4509-4a0e-9ffb-517f63800484
+                Id: da925592-38e1-4788-b34c-5e6611ce4ef9
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: building2
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: abac1a1b-9da7-4a1f-b81b-cb3dd4040e96
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 1.65499997
+                      Y: 0.0
+                      Z: 0.181999996
+                    LocalScale:
+                      X: 1.0
+                      Y: 1.0
+                      Z: 1.0
+                  - !SmartCityDemo.Components.BuildingComponent,SmartCityDemo
+                    Id: 1c7479f2-0f1b-4c66-8589-0a649ffcf79b
+                    IsEnabled: true
+                Children:
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: pushpin2
+                    Tag: Pushpin2
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: 4d172225-7f6d-4fa6-a9fd-83a8397e1663
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.00435757637
+                          Y: 1.2419374
+                          Z: 0.0112311393
+                        LocalScale:
+                          X: 0.300000012
+                          Y: 0.300000012
+                          Z: 0.300000012
+                      - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                        Id: ea37e67d-9dcd-4aed-990a-e8cdc9c0cf99
+                        BillboardType: Axial_Orientation
+                        FlipMode: None
+                        IsEnabled: true
+                        Origin:
+                          X: 0.5
+                          Y: 0.5
+                        Rotation: 0.0
+                        Sampler: null
+                        Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                        TintColor:
+                          A: 255
+                          B: 255
+                          G: 255
+                          R: 255
+                      - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                        Id: 19795f10-96bd-4aff-9268-9cae7e7a2833
+                        DebugBoundingbox: true
+                        IsCullingEnabled: true
+                        IsEnabled: true
+                        Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                        OrderBias: 0
+                        RenderFlags: CastShadows
+                      - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                        Id: a89aaa30-0d93-40a7-9480-91906237684f
+                        Center:
+                          X: 0.0
+                          Y: 0.0
+                        Distance: 1.39999998
+                        IsEnabled: true
+                        SmoothTime: 0.200000003
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                        Id: 12b52468-6671-471f-b0ab-5f742c68b498
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.200000003
+                        CollisionCategories: Cat2
+                        Friction: 0.5
+                        IsEnabled: true
+                        IsSensor: false
+                        MaskBits: All
+                        Restitution: 0.0
+                        RollingFriction: 0.0
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                        Id: 56e9a0f6-827c-4090-b257-d85603847124
+                        IsEnabled: true
+                        Margin: 0.0399999991
+                        Offset:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        Radius: 0.5
+                      - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                        Id: 99cdd413-e328-4599-919e-a779d19ae475
+                        IsEnabled: true
+                    Children: []
+                    Id: 91b91637-e1a4-473b-b87f-a0a63f7dd0a3
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: buildingPivot
+                    Tag: null
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: c2313df0-5564-4d7a-beab-fc91c31f0d2f
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalScale:
+                          X: 1.0
+                          Y: 1.0
+                          Z: 1.0
+                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                        Id: 876d0a9d-2ae9-4284-a73d-1a6923f19f9d
+                        AnimationTime: 0.5
+                        IsEnabled: true
+                    Children:
+                      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                        Name: buildingVisual2
+                        Tag: null
+                        IsEnabled: true
+                        IsStatic: false
+                        Components:
+                          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                            Id: 16177771-7861-4cb9-bb56-a597d7f9e72a
+                            IsEnabled: true
+                            LocalOrientation:
+                              W: 0.992001712
+                              X: 0.0
+                              Y: -0.126224458
+                              Z: 0.0
+                            LocalPosition:
+                              X: -5.55515289E-05
+                              Y: 0.5
+                              Z: -0.000153884292
+                            LocalScale:
+                              X: 0.221700072
+                              Y: 0.99000001
+                              Z: 0.254520327
+                          - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                            Id: 0153821b-7bd3-49aa-b427-a783ebc4a0b4
+                            AsignedTo: Default
+                            IsEnabled: true
+                            Material: 6a5906ee-6a61-4d86-baeb-484577cc97a4
+                          - !WaveEngine.Components.Graphics3D.CubeMesh,WaveEngine.Components
+                            Id: 76eeafc3-81dc-44d1-92c8-469464e977eb
+                            InitialU: 0.0
+                            InitialV: 0.0
+                            IsEnabled: true
+                            Size: 1.0
+                            UTile: 1.0
+                            UVHorizontalFlip: false
+                            UVVerticalFlip: false
+                            YTile: 1.0
+                          - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                            Id: a6f7f04e-b5ce-4c9a-bf56-471f4bd1dda5
+                            DebugBoundingbox: true
+                            IsCullingEnabled: true
+                            IsEnabled: true
+                            OrderBias: 0
+                            RenderFlags: CastShadows
+                          - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                            Id: fa9d883b-1b36-4c7a-bf9f-38dc0db64d8b
+                            Center:
+                              X: 0.0
+                              Y: 0.0
+                            Distance: 1.39999998
+                            IsEnabled: true
+                            SmoothTime: 0.0199999996
+                            UpdateOrder: 0.5
+                        Children: []
+                        Id: bebf3d89-ddb7-401e-8d77-7b4089272a7e
+                    Id: d439e4d9-7e8f-46f1-9707-a1b5120ac577
+                Id: 1a3d6a00-105a-4367-96b8-3cf7bd98b36b
+              - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                Name: building3
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                    Id: cc499ef8-b99a-4b5d-840e-57103a1ca698
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 1.0
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.155000001
+                      Y: 0.0
+                      Z: 4.41400003
+                    LocalScale:
+                      X: 1.0
+                      Y: 1.0
+                      Z: 1.0
+                  - !SmartCityDemo.Components.BuildingComponent,SmartCityDemo
+                    Id: 1b7fd089-c149-41c4-8274-6fe83b6f017c
+                    IsEnabled: true
+                Children:
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: pushpin3
+                    Tag: Pushpin3
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: 1174ffdd-b246-4e0c-82b1-678b051f4015
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.0124713182
+                          Y: 1.50714624
+                          Z: -0.0342936516
+                        LocalScale:
+                          X: 0.300000012
+                          Y: 0.300000012
+                          Z: 0.300000012
+                      - !WaveEngine.Components.Graphics3D.Billboard,WaveEngine.Components
+                        Id: 7b2e0113-d8d8-42a6-a5ea-c6402171a769
+                        BillboardType: Axial_Orientation
+                        FlipMode: None
+                        IsEnabled: true
+                        Origin:
+                          X: 0.5
+                          Y: 0.5
+                        Rotation: 0.0
+                        Sampler: null
+                        Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+                        TintColor:
+                          A: 255
+                          B: 255
+                          G: 255
+                          R: 255
+                      - !WaveEngine.Components.Graphics3D.BillboardRenderer,WaveEngine.Components
+                        Id: 9fa4155b-7320-44d7-82b6-cf2f7908e65f
+                        DebugBoundingbox: true
+                        IsCullingEnabled: true
+                        IsEnabled: true
+                        Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+                        OrderBias: 0
+                        RenderFlags: CastShadows
+                      - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                        Id: 990e484f-4cdb-4ca7-89b2-d01b4d5e0ee5
+                        Center:
+                          X: 0.0
+                          Y: 0.0
+                        Distance: 1.39999998
+                        IsEnabled: true
+                        SmoothTime: 0.200000003
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.StaticBody3D,WaveEngine.Framework
+                        Id: 51e4534b-c723-49c1-8e0b-62af4d8b2d78
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.200000003
+                        CollisionCategories: Cat2
+                        Friction: 0.5
+                        IsEnabled: true
+                        IsSensor: false
+                        MaskBits: All
+                        Restitution: 0.0
+                        RollingFriction: 0.0
+                        UpdateOrder: 0.5
+                      - !WaveEngine.Framework.Physics3D.SphereCollider3D,WaveEngine.Framework
+                        Id: d49be92a-4d7d-4cfe-9346-1f44cc87abc4
+                        IsEnabled: true
+                        Margin: 0.0399999991
+                        Offset:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        Radius: 0.5
+                      - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+                        Id: a61f014b-afc5-40d3-bd70-65cb1d9739b6
+                        IsEnabled: true
+                    Children: []
+                    Id: 0cfa3944-175f-484c-a409-0a434f2302ac
+                  - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                    Name: buildingPivot
+                    Tag: null
+                    IsEnabled: true
+                    IsStatic: false
+                    Components:
+                      - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                        Id: 141bb7bf-cb4f-4c10-a436-de624d56ea1e
+                        IsEnabled: true
+                        LocalOrientation:
+                          W: 1.0
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalPosition:
+                          X: 0.0
+                          Y: 0.0
+                          Z: 0.0
+                        LocalScale:
+                          X: 1.0
+                          Y: 1.0
+                          Z: 1.0
+                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                        Id: de95c3e9-faf8-4f2a-948c-97cdf8206edb
+                        AnimationTime: 0.5
+                        IsEnabled: true
+                    Children:
+                      - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework
+                        Name: buildingVisual3
+                        Tag: null
+                        IsEnabled: true
+                        IsStatic: false
+                        Components:
+                          - !WaveEngine.Framework.Graphics.Transform3D,WaveEngine.Framework
+                            Id: 94afd833-808d-41fc-b7e4-bd47a4655dce
+                            IsEnabled: true
+                            LocalOrientation:
+                              W: 0.998617947
+                              X: 0.0
+                              Y: -0.0525559224
+                              Z: 0.0
+                            LocalPosition:
+                              X: 0.000183224678
+                              Y: 0.63237375
+                              Z: -0.000322341919
+                            LocalScale:
+                              X: 0.321700096
+                              Y: 1.29999995
+                              Z: 0.33452037
+                          - !WaveEngine.Components.Graphics3D.MaterialComponent,WaveEngine.Framework
+                            Id: 18f5b058-48b8-4d14-9ed3-136e89e411f4
+                            AsignedTo: Default
+                            IsEnabled: true
+                            Material: 6a5906ee-6a61-4d86-baeb-484577cc97a4
+                          - !WaveEngine.Components.Graphics3D.CubeMesh,WaveEngine.Components
+                            Id: c9564991-060c-4895-a7df-7f62c0cf4b0a
+                            InitialU: 0.0
+                            InitialV: 0.0
+                            IsEnabled: true
+                            Size: 1.0
+                            UTile: 1.0
+                            UVHorizontalFlip: false
+                            UVVerticalFlip: false
+                            YTile: 1.0
+                          - !WaveEngine.Components.Graphics3D.MeshRenderer,WaveEngine.Framework
+                            Id: de6f57ac-ea55-47d5-9b7c-f435193adb03
+                            DebugBoundingbox: true
+                            IsCullingEnabled: true
+                            IsEnabled: true
+                            OrderBias: 0
+                            RenderFlags: CastShadows
+                          - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+                            Id: af8d2dd5-10f4-487d-a130-7d3525053eb0
+                            Center:
+                              X: 0.0
+                              Y: 0.0
+                            Distance: 1.39999998
+                            IsEnabled: true
+                            SmoothTime: 0.0199999996
+                            UpdateOrder: 0.5
+                        Children: []
+                        Id: b8f53e79-b971-46ae-bdf8-8f5082241ace
+                    Id: d014314d-c16c-4d44-83f3-4075a9c484af
+                Id: f4bad43e-974f-42f3-9ff1-e51568716f7b
+            Id: d6ddae77-2736-410e-8efe-a4a728e41957
         Id: c3f099e1-f651-473a-ad43-6dc08e64b9be
     Id: 039777ed-bf41-4ff6-853f-d347de9ec0b2
   - !WaveEngine.Framework.Assets.AssetSources.Entities.EntityItemModel,WaveEngine.Framework

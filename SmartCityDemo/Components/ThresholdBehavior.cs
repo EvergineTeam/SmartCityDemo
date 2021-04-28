@@ -24,8 +24,6 @@ namespace SmartCityDemo.Components
 
         private Vector3 targetScale;
 
-        private bool isAnimating;
-
         protected override bool OnAttached()
         {
             if (!Application.Current.IsEditor)
