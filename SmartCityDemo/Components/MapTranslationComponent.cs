@@ -73,7 +73,7 @@ namespace SmartCityDemo.Components
             if (hitResult.Succeeded)
             {
                 this.initPosition = this.translationPivot.Position;
-                var body = hitResult.PhysicBody.UserData as StaticBody3D;
+                var body = hitResult.PhysicBody.BodyComponent;
                 var pushpin = body.Owner.FindComponent<PushpinComponent>();
 
                 if (pushpin != null)
