@@ -3,8 +3,8 @@ This demo uses a backed map 3D model to implement a simple interaction and naveg
 
 Video: https://www.youtube.com/watch?v=fuHXmrLqGXI
 
-![alt Screenshot](https://github.com/Evergine/SmartCityDemo/blob/master/Screenshots/screenshot01.jpg)
-![alt Screenshot](https://github.com/Evergine/SmartCityDemo/blob/master/Screenshots/screenshot02.jpg)
+![alt Screenshot](https://github.com/EvergineTeam/SmartCityDemo/blob/master/Screenshots/screenshot01.jpg)
+![alt Screenshot](https://github.com/EvergineTeam/SmartCityDemo/blob/master/Screenshots/screenshot02.jpg)
 
 ## Build and Test
 Required Visual Studio 2022 with .NET6 support
