@@ -1,4 +1,4 @@
-!WaveEngine.Assets.Exporters.MaterialMetaFile,WaveEngine.Assets
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
 Id: 62bec0fa-8b47-468d-8d4c-629ce3071a17
 DefaultProfile:
   ExcludeAsset: false
@@ -15,16 +15,16 @@ MaterialInfo:
   OrderBias: 0
   Parameters:
     - Name: WorldViewProj
-      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
       ValueByteArray: uYMvQEpdOz/mA7g/MP+3P2j+wbMfL5dA9FTTvotP0742/z1AKxUtvyD9qb/G+Km/uD+ANZ0gQDUf7ItAvRuPQA==
     - Name: World
-      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
       ValueByteArray: AAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAPw==
     - Name: ViewProj
-      Type: WaveEngine.Mathematics.Matrix4x4,WaveEngine.Mathematics
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
       ValueByteArray: uYOvP0pduz7mAzg/MP83P2j+QbMfLxdA9FRTvotPU742/70/KxWtviD9Kb/G+Cm/uD+ANZ0gQDUf7ItAvRuPQA==
     - Name: Center
-      Type: WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: Radius
       Type: System.Single

@@ -3,18 +3,18 @@ This demo uses a backed map 3D model to implement a simple interaction and naveg
 
 Video: https://www.youtube.com/watch?v=fuHXmrLqGXI
 
-![alt Screenshot](https://github.com/WaveEngine/SmartCityDemo/blob/master/Screenshots/screenshot01.jpg)
-![alt Screenshot](https://github.com/WaveEngine/SmartCityDemo/blob/master/Screenshots/screenshot02.jpg)
+![alt Screenshot](https://github.com/Evergine/SmartCityDemo/blob/master/Screenshots/screenshot01.jpg)
+![alt Screenshot](https://github.com/Evergine/SmartCityDemo/blob/master/Screenshots/screenshot02.jpg)
 
 ## Build and Test
-Required Visual Studio 16.8 with .NET5 support
+Required Visual Studio 2022 with .NET6 support
 
 ### How to use
  * **Left Click + Mouse**: To pan the map and select buildings.
  * **Right Click + Mouse**: Camera look.
 
 ----
-Powered by **[WaveEngine 3.2](http://www.waveengine.net)**
+Powered by **[Evergine](http://www.Evergine.com)**
 
 LET'S CONNECT!
 
