@@ -1,5 +1,5 @@
 # Smart City Demo
-This demo uses a backed map 3D model to implement a simple interaction and navegation.
+This demo uses a backed map 3D model to implement a simple interaction and navigation.
 
 Video: https://www.youtube.com/watch?v=fuHXmrLqGXI
 
