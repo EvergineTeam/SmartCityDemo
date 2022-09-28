@@ -138,10 +138,10 @@ Items:
       - !Evergine.Framework.Graphics.PhotometricDirectionalLight,Evergine.Framework
         Id: 5f6768ca-a7e6-4ab7-82b2-d9b3c42d111f
         Color:
-          A: 255
-          B: 253
-          G: 248
-          R: 255
+          A: 0
+          B: 228
+          G: 240
+          R: 249
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -150,10 +150,10 @@ Items:
         IsEnabled: true
         IsShadowEnabled: true
         LinearColor:
-          A: 1.0
-          B: 0.982790232
-          G: 0.943362474
-          R: 1.0
+          A: 0.0
+          B: 0.77908951
+          G: 0.874792635
+          R: 0.9453125
         ShadowBias: 0.00400000019
         ShadowDistance: 20.0
         ShadowOpacity: 1.0
@@ -194,7 +194,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: null
+        Material: f32f62bc-92f8-4825-b6bc-a5a32f0e9bc1
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -317,642 +317,6 @@ Items:
               Y: 1.0
               Z: 1.0
         Children:
-          - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-            Name: cityNonClipped
-            Tag: null
-            IsEnabled: false
-            IsStatic: false
-            Components:
-              - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                Id: 7046fc72-c818-4ee6-941b-82f6d90e7391
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: -0.416000009
-                  Y: 0.889999986
-                  Z: 3.15100002
-                LocalScale:
-                  X: 1.0
-                  Y: 1.0
-                  Z: 1.0
-            Children:
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart0
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 6c619ae3-a467-409f-bf77-9a029af5e577
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 79bef0c8-2dc0-405e-81d8-52ba6f939cc5
-                    AsignedTo: SimplygonCastMaterial002
-                    IsEnabled: true
-                    Material: 05c506ca-839d-4e71-95da-3b16cac012b5
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: feb51c28-d8ec-43f2-a3e0-9d93ce1947c0
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart0
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: f4feb789-20bc-4fb4-9c07-09bacb4e52b5
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 3ee601b7-abc1-4c43-8dd4-f61f0de71b37
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart1
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 9662ce5d-4a1e-4b6a-a1f9-a1f65d8101c5
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 56655d06-1a55-4335-8a10-25d442903a7a
-                    AsignedTo: SimplygonCastMaterial
-                    IsEnabled: true
-                    Material: 39f56062-6cb3-42b4-b778-b03a1b04405a
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 52947f4c-11c2-46ab-bc36-87c028f756de
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart1
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: d26cc94a-6493-4206-931f-929c904a4109
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 6df5343e-5361-4b4c-aff4-510dafecb06e
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart2
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: bffa267e-fada-467d-8eec-dd7198f15ef8
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: fede364a-5277-44ab-8fa8-8d18770605fc
-                    AsignedTo: SimplygonCastMaterial001
-                    IsEnabled: true
-                    Material: e5fcf2e6-52a9-4710-b7d5-c5b08cbf564b
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: a47d9b27-07db-4188-9a85-e899fd4f06db
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart2
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 48ae935f-13ea-4b12-b525-49fe4ddd2061
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 6958ee6b-9c84-45be-a031-a48eb7d28037
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart3
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 3cff33cb-7429-4528-b558-96b36e1b6f64
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 171100d9-3a20-4ece-9741-b1436d799774
-                    AsignedTo: SimplygonCastMaterial003
-                    IsEnabled: true
-                    Material: fad3e5c5-948e-4614-ba57-c573cabf72be
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 6fb26598-ef0d-4e4e-8b92-183596b3eb92
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart3
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 73c58b8e-16d6-44ed-989c-e9f9ba2eef98
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 53bf0f26-5a26-4687-b05f-d48f9aa89a6c
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart4
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 06a980e8-82c1-40f8-9916-686270a6b0b5
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: dd57d369-881f-4ca3-8604-fa15bedf1e66
-                    AsignedTo: SimplygonCastMaterial004
-                    IsEnabled: true
-                    Material: 53121f99-0a63-488a-a3fb-bd088ca68281
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: e145d240-e15b-4f9b-9179-4a6477b98340
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart4
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 744f4293-5212-41e9-8274-0ddba35b158f
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 390d966e-ff11-481e-b1b9-76729bd2ba83
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart5
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: be7e9651-68c3-4ba7-8c50-b8a916a6ee80
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 6dc2c206-8805-43f6-a7fa-43eeefc32c1b
-                    AsignedTo: SimplygonCastMaterial005
-                    IsEnabled: true
-                    Material: 453b9321-d614-45b9-a129-516c80cdba6c
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 68395170-874e-4f8d-b902-b1d4d4d347b5
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart5
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 295932af-235b-40e7-9971-25aa8d6beab9
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 7114592e-db64-49b2-942c-5ffdee03923b
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart6
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 25ae9a76-ca35-4384-be0b-59cdae4089d8
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: bb75255a-2f8b-4443-a6d4-e6838583d439
-                    AsignedTo: SimplygonCastMaterial006
-                    IsEnabled: true
-                    Material: bf9b1a77-e8ac-4bf2-ac32-1e07e6a397f3
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 21b338c5-7ee4-4d5b-bb09-2382336ac9f7
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart6
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 74c6e500-5bda-4f7b-beea-a3c787c65935
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: aeb8d682-fb46-4add-8efc-d3a67fdc51a8
-            Id: 4dca868c-cb66-447c-a965-8271c9012ca2
-          - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-            Name: cityClipped
-            Tag: null
-            IsEnabled: true
-            IsStatic: false
-            Components:
-              - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                Id: d25197ad-ebb2-42b0-b28a-c9e59f336700
-                IsEnabled: true
-                LocalOrientation:
-                  W: 1.0
-                  X: 0.0
-                  Y: 0.0
-                  Z: 0.0
-                LocalPosition:
-                  X: -0.415874898
-                  Y: 0.890028
-                  Z: 3.15053844
-                LocalScale:
-                  X: 1.0
-                  Y: 1.0
-                  Z: 1.0
-            Children:
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart0
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: a03b4c4e-5016-4fa5-b4e3-3c8985a263a5
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 4315c6c1-e5c1-4736-ac02-405f9e202582
-                    AsignedTo: SimplygonCastMaterial002
-                    IsEnabled: true
-                    Material: 7968617e-d809-43f1-917a-71bd024ad711
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 164b74d3-e062-4a4a-925f-030e82b293f9
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart0
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: ba483158-8035-4c29-9bb3-d85e92928d68
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: c6e5d86d-10d7-4769-acfd-800528cc5e5d
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart1
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: dbc0a019-6563-42a6-ac12-ac86202c9e40
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 241ac538-0d74-4f08-9836-82a647e544ca
-                    AsignedTo: SimplygonCastMaterial
-                    IsEnabled: true
-                    Material: 62bec0fa-8b47-468d-8d4c-629ce3071a17
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 0d383828-b648-456f-9e0f-70b92bd8cf80
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart1
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 2f3261aa-0df6-494b-9561-fc02bf0eeea9
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 4a9f91ad-f2c1-4b60-9703-d34950a5093e
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart2
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 708e10ca-46a9-4496-924e-2c4b208242b5
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: d525fb15-e2d5-49a9-b0a3-ba0e1ccaf343
-                    AsignedTo: SimplygonCastMaterial001
-                    IsEnabled: true
-                    Material: 79d0f58e-5ace-42c8-82af-03fed9bd1fed
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 940ea88d-affe-4fcf-b8a9-db56b7f118d4
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart2
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 1b76fc4c-2deb-442c-8285-e9b0533b36d5
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 6aff44a8-7721-4395-9fda-43456e2fcb1d
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart3
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: f7dd715b-5f02-4abb-bbba-a43a8fabbb00
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 435bbe60-c55b-4514-9a3f-c6805f5ec250
-                    AsignedTo: SimplygonCastMaterial003
-                    IsEnabled: true
-                    Material: 9ee97618-eacd-490f-b6e7-6dd77f88081d
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: f6088599-e4fb-4102-a191-dc5952b47b79
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart3
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: a63340b1-5ea4-4296-b96d-a95b5a8a45a9
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 1366147e-3258-40da-a206-9579eb95e486
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart4
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 22c982e5-c1d8-432b-8d22-6e6dd8bf1d8d
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 74bb49c0-e723-4513-86b7-0e2a7a27da15
-                    AsignedTo: SimplygonCastMaterial004
-                    IsEnabled: true
-                    Material: 8597370f-beb1-4069-84ab-1c69135a7c5b
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 05a52852-74e8-43ec-a6ce-7d7ba4e887a3
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart4
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 470304f1-94fa-429a-b93f-e675d49958f0
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: 06f37b2f-5916-4720-9bbf-5ad4f150dcce
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart5
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 9899f783-f16f-483c-beb9-005cc8ecc00b
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 951e77f4-ef5e-4e21-9ac4-03f30c67266e
-                    AsignedTo: SimplygonCastMaterial005
-                    IsEnabled: true
-                    Material: e38724c5-fc75-4ab8-bbcd-2fdd05c3ac51
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 28b936f3-a3c5-48c3-879a-b278d8250279
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart5
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 353eb7e6-d7d2-420b-ad08-ed65d89da493
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: daec415e-4131-4f3e-903d-2e047e16b6b2
-              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-                Name: CityPart6
-                Tag: null
-                IsEnabled: true
-                IsStatic: false
-                Components:
-                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-                    Id: 45be33d2-a972-48e3-9eb6-a67fae34f026
-                    IsEnabled: true
-                    LocalOrientation:
-                      W: 0.707106829
-                      X: -0.707106709
-                      Y: 0.0
-                      Z: 0.0
-                    LocalPosition:
-                      X: 0.0
-                      Y: 0.0
-                      Z: 0.0
-                    LocalScale:
-                      X: 0.0253999997
-                      Y: 0.0253999978
-                      Z: 0.0253999978
-                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-                    Id: 2ccf1edd-1e8b-44ee-86f9-29417504d5bd
-                    AsignedTo: SimplygonCastMaterial006
-                    IsEnabled: true
-                    Material: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
-                    UseCopy: false
-                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
-                    Id: 9916680f-b21e-4d83-8bf8-40bc771fe680
-                    IsEnabled: true
-                    Model: 853f09fd-70eb-4615-9265-505292a89a52
-                    ModelMeshName: CityPart6
-                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-                    Id: 04787b71-eacf-4b57-9e35-b201d4a710f3
-                    DebugBoundingbox: true
-                    IsCullingEnabled: true
-                    IsEnabled: true
-                    OrderBias: 0
-                    RenderFlags: CastShadows
-                Children: []
-                Id: cf45f66e-bda0-4b15-a84f-f92a7fc96921
-            Id: 666eb6af-35fa-4b7b-b04c-9188b4a35873
           - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
             Name: buildings
             Tag: null
@@ -1553,6 +917,324 @@ Items:
                     Id: d014314d-c16c-4d44-83f3-4075a9c484af
                 Id: f4bad43e-974f-42f3-9ff1-e51568716f7b
             Id: d6ddae77-2736-410e-8efe-a4a728e41957
+          - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+            Name: cityClipped
+            Tag: null
+            IsEnabled: true
+            IsStatic: false
+            Components:
+              - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                Id: 8c69fa1b-3a8c-4da8-aab7-b2234955aed6
+                IsEnabled: true
+                LocalOrientation:
+                  W: 1.0
+                  X: 0.0
+                  Y: 0.0
+                  Z: 0.0
+                LocalPosition:
+                  X: -0.416000009
+                  Y: 0.889999986
+                  Z: 3.15100002
+                LocalScale:
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
+            Children:
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart0
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 154b701c-3b7b-4438-988b-74faace8bd75
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: b40fcac6-a675-482c-9ca0-69fb3232ea9f
+                    AsignedTo: SimplygonCastMaterial002
+                    IsEnabled: true
+                    Material: 7968617e-d809-43f1-917a-71bd024ad711
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: 50ba4b3b-b23c-4bab-ad6c-dd7cceaa46da
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart0
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: aac7fbe1-a226-4c2c-b6f5-fd3530c4098b
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 06fa138f-f8db-462d-b31f-18ad38d24e2c
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart1
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: d9e351aa-5889-402c-be41-44c6ee0f15e6
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: c46ebdc3-5b23-4c4a-ab48-b0b5e0edf3d8
+                    AsignedTo: SimplygonCastMaterial
+                    IsEnabled: true
+                    Material: 62bec0fa-8b47-468d-8d4c-629ce3071a17
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: 35a7bfe7-f827-480b-ba17-a76916134b86
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart1
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: eff7656a-2bcf-4368-84a6-cd57172238b3
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 748f11af-ae66-45e1-9fdb-b8407b1bf154
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart2
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 068e2607-a1f6-4b8d-921d-877a6f653185
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: 31116f3a-f0bb-4e49-8859-924d5d356ee7
+                    AsignedTo: SimplygonCastMaterial001
+                    IsEnabled: true
+                    Material: 79d0f58e-5ace-42c8-82af-03fed9bd1fed
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: c8a95aa8-8ffc-4260-a1e3-7f7c67c0f0e8
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart2
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: 7ab31ded-007b-4115-8a54-f3b24d56dd28
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 744d40e2-7f4b-4e4e-ba54-3539f38e07c6
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart3
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 61269c79-9552-4e5d-86f7-51da473bb6b5
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: f337d11b-a814-499c-8d64-5a453335ce34
+                    AsignedTo: SimplygonCastMaterial003
+                    IsEnabled: true
+                    Material: 9ee97618-eacd-490f-b6e7-6dd77f88081d
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: 37bd2673-7054-4aa5-8b87-ce6d4540a78b
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart3
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: 3f718d7b-dd83-4d19-b8ee-895b9c5274a1
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 32e4aa1b-16b3-4fa7-aafc-8d1320b62469
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart4
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 970f738a-c6ca-4584-b25c-394ce3bd6d30
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: c00e6976-d266-4255-a905-55c5c8cfb831
+                    AsignedTo: SimplygonCastMaterial004
+                    IsEnabled: true
+                    Material: 8597370f-beb1-4069-84ab-1c69135a7c5b
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: d0cf34f4-e0cb-43f1-b0c6-5215a141486b
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart4
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: bfa089e3-290b-45e7-b49d-c983a6146260
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 9f14b27e-6879-4259-8e84-c6aedb636d36
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart5
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 302fd76d-a23c-4ed3-b929-0c35afe2136c
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: b2a2f6de-387c-4437-978a-2d2dcd59e2cd
+                    AsignedTo: SimplygonCastMaterial005
+                    IsEnabled: true
+                    Material: e38724c5-fc75-4ab8-bbcd-2fdd05c3ac51
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: 2c6c9af1-9b67-455e-bcaf-ee69542f9ce0
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart5
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: f7dc7b91-72a8-444a-a76c-e55d61f6865e
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 8f63f0f1-a488-47e3-9501-2f65e10970ed
+              - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+                Name: CityPart6
+                Tag: null
+                IsEnabled: true
+                IsStatic: false
+                Components:
+                  - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+                    Id: 4547e8e7-920e-429e-ac4e-9f0c5ee9fac3
+                    IsEnabled: true
+                    LocalOrientation:
+                      W: 0.707106769
+                      X: -0.707106769
+                      Y: -0.0
+                      Z: 0.0
+                    LocalPosition:
+                      X: 0.0
+                      Y: 0.0
+                      Z: 0.0
+                    LocalScale:
+                      X: 2.53999996
+                      Y: 2.53999996
+                      Z: 2.53999996
+                  - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+                    Id: ba88e620-faba-4217-8a94-3570b8df5ba6
+                    AsignedTo: SimplygonCastMaterial006
+                    IsEnabled: true
+                    Material: 62df6a4a-db45-43bc-b7e0-c78c10d1b248
+                    UseCopy: false
+                  - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
+                    Id: 69e5c367-fa65-429e-9060-df8101056356
+                    IsEnabled: true
+                    Model: 853f09fd-70eb-4615-9265-505292a89a52
+                    ModelMeshName: CityPart6
+                  - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+                    Id: acff5994-3942-4381-96f6-e8fc4e95bed8
+                    DebugBoundingbox: true
+                    IsCullingEnabled: true
+                    IsEnabled: true
+                    OrderBias: 0
+                    RenderFlags: CastShadows
+                Children: []
+                Id: 2456469b-f1b4-444b-9882-a9ad10e275f1
+            Id: 9c25e1b3-cb6a-4388-a169-b76040bfd77b
         Id: c3f099e1-f651-473a-ad43-6dc08e64b9be
     Id: 039777ed-bf41-4ff6-853f-d347de9ec0b2
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
