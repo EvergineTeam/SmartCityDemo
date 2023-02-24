@@ -60,7 +60,6 @@ Items:
           - !Evergine.Framework.Graphics.Camera3D,Evergine.Framework
             Id: 8d8fd409-9ab8-4c05-ad8f-34693d553a57
             Aperture: 1.0
-            AspectRatio: 1.93536127
             AutoDepthBounds: false
             AutoExposureEnabled: true
             CameraOrder: 0.0
@@ -68,9 +67,6 @@ Items:
             ClearFlags: All
             ClearStencil: 0
             Compensation: 0.0
-            DepthRange:
-              MaxDepth: 1.0
-              MinDepth: 0.0
             DisplayTag: null
             Exposure: 1.07411551
             FarPlane: 50.0
@@ -91,13 +87,6 @@ Items:
             LogLuminanceRange: 12.0
             MinLogLuminance: -10.0
             NearPlane: 0.100000001
-            ScreenViewport:
-              Height: 263.0
-              MaxDepth: 1.0
-              MinDepth: 0.0
-              Width: 509.0
-              X: 0.0
-              Y: 0.0
             Sensitivity: 100.0
             SensorSize:
               X: 36.0
@@ -105,10 +94,6 @@ Items:
             ShutterSpeed: 1.20000005
             TAU: 1.10000002
             TagFilter: null
-            UpVector:
-              X: 0.0
-              Y: 1.0
-              Z: 0.0
             UsePhysicalParameters: false
         Children: []
         Id: c219c0b4-f06a-4bb5-8cfc-00340a820729
@@ -194,15 +179,15 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: f32f62bc-92f8-4825-b6bc-a5a32f0e9bc1
+        Material: 3e660741-a514-4741-81ff-6e3e061c4a31
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
         IsEnabled: true
         Tessellation: 32
-        UVHorizontalFlip: false
-        UVVerticalFlip: false
+        UMirror: false
+        VMirror: false
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: 1665742b-454f-4cda-9b9b-df6698342e5d
         DebugBoundingbox: true
@@ -504,14 +489,14 @@ Items:
                             UseCopy: false
                           - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
                             Id: 4d839820-c7f6-4112-9e2f-2602c7798711
-                            InitialU: 0.0
-                            InitialV: 0.0
                             IsEnabled: true
                             Size: 0.995000005
+                            UMirror: false
+                            UOffset: 0.0
                             UTile: 0.99000001
-                            UVHorizontalFlip: false
-                            UVVerticalFlip: false
-                            YTile: 1.0
+                            VMirror: false
+                            VOffset: 0.0
+                            VTile: 1.0
                           - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
                             Id: 9d80d6c5-cafc-4772-a732-d2c28a446b6a
                             DebugBoundingbox: true
@@ -696,14 +681,14 @@ Items:
                             UseCopy: false
                           - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
                             Id: 76eeafc3-81dc-44d1-92c8-469464e977eb
-                            InitialU: 0.0
-                            InitialV: 0.0
                             IsEnabled: true
                             Size: 1.0
+                            UMirror: false
+                            UOffset: 0.0
                             UTile: 1.0
-                            UVHorizontalFlip: false
-                            UVVerticalFlip: false
-                            YTile: 1.0
+                            VMirror: false
+                            VOffset: 0.0
+                            VTile: 1.0
                           - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
                             Id: a6f7f04e-b5ce-4c9a-bf56-471f4bd1dda5
                             DebugBoundingbox: true
@@ -888,14 +873,14 @@ Items:
                             UseCopy: false
                           - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
                             Id: c9564991-060c-4895-a7df-7f62c0cf4b0a
-                            InitialU: 0.0
-                            InitialV: 0.0
                             IsEnabled: true
                             Size: 1.0
+                            UMirror: false
+                            UOffset: 0.0
                             UTile: 1.0
-                            UVHorizontalFlip: false
-                            UVVerticalFlip: false
-                            YTile: 1.0
+                            VMirror: false
+                            VOffset: 0.0
+                            VTile: 1.0
                           - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
                             Id: de6f57ac-ea55-47d5-9b7c-f435193adb03
                             DebugBoundingbox: true
