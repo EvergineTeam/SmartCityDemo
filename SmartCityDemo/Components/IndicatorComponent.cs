@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Mathematics;
@@ -11,7 +9,7 @@ namespace SmartCityDemo.Components
     public class IndicatorComponent : Component
     {
         [BindComponent]
-        private Transform3D transform;
+        private Transform3D transform = null;
 
         private Transform3D targetTransform;
 

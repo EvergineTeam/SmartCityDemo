@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Evergine.Components.WorkActions;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
-using Evergine.Mathematics;
 
 namespace SmartCityDemo.Components
 {

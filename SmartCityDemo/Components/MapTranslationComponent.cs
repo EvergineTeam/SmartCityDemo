@@ -1,10 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using Evergine.Common.Input.Mouse;
-using Evergine.Common.Input.Pointer;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Framework.Physics3D;

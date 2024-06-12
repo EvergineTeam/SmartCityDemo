@@ -1,11 +1,7 @@
 // Copyright © 2019 Wave Engine S.L. All rights reserved. Use is subject to license terms.
 
 using System;
-using System.Diagnostics;
-using System.Linq;
-using Evergine.Common.Input.Keyboard;
 using Evergine.Common.Input.Mouse;
-using Evergine.Common.Input.Pointer;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Mathematics;
