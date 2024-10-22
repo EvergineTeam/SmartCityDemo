@@ -10,7 +10,7 @@ namespace SmartCityDemo.Components
     public class ThresholdBehavior : Behavior
     {
         [BindComponent]
-        private Transform3D transform;
+        private Transform3D transform = null;
 
         public Vector2 Center;
 

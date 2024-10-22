@@ -1,15 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Evergine.Components.WorkActions;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Framework.Services;
 using Evergine.Mathematics;
+using System;
 
 namespace SmartCityDemo.Components
 {
-    public class ColapseComponent : Component
+    public class CollapseComponent : Component
     {
         [BindComponent]
         public Transform3D Transform;

@@ -1,17 +1,18 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 78a94ad7-1c32-4d32-b572-1c81169af9aa
+Id: 103c2666-5a38-4c43-a682-98ea0e206cb9
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: b873e620-3915-40c1-ad65-27c61b68a21d
+  Id: 5d6d55a6-a3e8-4b39-ac3b-a93f2cf6c7d2
   ActiveDirectives:
-    - DIFF
+    - IBL
+    - LIT
   AllowInstancing: false
   EffectID: daa1f60a-82ad-40fc-8fbb-7b85caa6de0a
-  Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
   OrderBias: 0
   Parameters:
     - Name: World
@@ -55,22 +56,22 @@ MaterialInfo:
       ValueByteArray: AACAPw==
     - Name: MultiviewViewProj
       Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+      ValueByteArray: NboRQBTmNb65M4q9LzCKvQAAAACZ29A/DbI8vzitPL+y8Wm+cZ3ivyItLL+6KCy/4wgCM6qzmjUe7ItAvBuPQA==
     - Name: MultiviewEyePosition
       Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAA==
+      ValueByteArray: yH+aPmbyUkDQekBAAACAPw==
     - Name: BaseColor
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AAAAAKtDvTxfsYI9
+      ValueByteArray: AACAPwAAgD8AAIA/
     - Name: Alpha
       Type: System.Single
       ValueByteArray: AACAPw==
     - Name: Metallic
       Type: System.Single
-      ValueByteArray: AAAAAA==
+      ValueByteArray: AAAAPw==
     - Name: Roughness
       Type: System.Single
-      ValueByteArray: AAAAAA==
+      ValueByteArray: zcxMPg==
     - Name: Reflectance
       Type: System.Single
       ValueByteArray: AAAAPw==
@@ -103,10 +104,8 @@ MaterialInfo:
       ValueByteArray: QAAAACUAAABaAAADAGAQAA==
     - Name: ShadowViewProjectionArray
       Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+      ValueByteArray: 0Bc7vzSQi78SN+q+AAAAAAAAAACXpIM/yeIcvwAAAADdL7a/UVIPP7CFcD4AAAAAqnOYQCexXsCbzBhAAACAPw==
   Samplers:
-    - ID: ef0bae07-17bd-4f20-bc93-5102ac501769
-      Name: BaseColorSampler
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
@@ -119,8 +118,10 @@ MaterialInfo:
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
-    - ID: 7d1e2792-2031-42bb-a67c-0dbd282be12a
-      Name: IblDFGSampler
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
@@ -132,8 +133,6 @@ MaterialInfo:
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
   Textures:
-    - ID: e81246d5-9482-4cd9-8d64-36ff34ce7006
-      Name: BaseColorTexture
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
@@ -146,8 +145,10 @@ MaterialInfo:
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
-    - ID: d81d459c-c433-4ee3-bfe5-b45fbce12736
-      Name: IblDFGTexture
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000

@@ -1,7 +1,6 @@
+using Evergine.Common.IO;
 using Evergine.Framework;
 using Evergine.Framework.Services;
-using Evergine.Framework.Threading;
-using Evergine.Platform;
 
 namespace SmartCityDemo
 {
@@ -30,7 +29,7 @@ namespace SmartCityDemo
             var assetsService = this.Container.Resolve<AssetsService>();
 
             // Navigate to scene
-            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.MyScene_wescene);
+            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.MainScene_wescene);
             ScreenContext screenContext = new ScreenContext(scene);
             screenContextManager.To(screenContext);
         }

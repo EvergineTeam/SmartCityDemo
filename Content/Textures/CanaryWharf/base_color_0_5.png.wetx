@@ -15,7 +15,7 @@ GenerateMipMaps: true
 NinePatchType: None
 PremultipliedAlpha: true
 Profiles: {}
-SamplerID: 00000000-0000-0000-0000-000000000000
+SamplerID: ef0bae07-17bd-4f20-bc93-5102ac501769
 Source:
   Header:
     Id: a7e97c23-49ca-4da5-be21-5e3abe051f53

@@ -45,10 +45,10 @@ Items:
             Id: 93416bbd-a18a-43ec-a74a-cdd0345f0275
             IsEnabled: true
             LocalOrientation:
-              W: 0.998220205
-              X: 0.0596356876
-              Y: 1.34110437E-07
-              Z: 0.0
+              W: 0.999657333
+              X: 0.02617695
+              Y: 1.3457371E-07
+              Z: 4.52284254E-09
             LocalPosition:
               X: 5.00679016E-06
               Y: -0.0634746552
@@ -68,7 +68,7 @@ Items:
             ClearStencil: 0
             Compensation: 0.0
             DisplayTag: null
-            Exposure: 1.07411551
+            Exposure: 1.04906332
             FarPlane: 50.0
             FieldOfView: 0.785398185
             FieldOfViewAxis: Vertical
@@ -179,7 +179,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 3e660741-a514-4741-81ff-6e3e061c4a31
+        Material: e83280cf-7273-4a83-994c-967a05b82ca9
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -454,7 +454,7 @@ Items:
                           X: 1.0
                           Y: 1.0
                           Z: 1.0
-                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                      - !SmartCityDemo.Components.CollapseComponent,SmartCityDemo
                         Id: 2c532c82-ab2d-4730-aa3c-9492c559a3c7
                         AnimationTime: 0.5
                         IsEnabled: true
@@ -646,7 +646,7 @@ Items:
                           X: 1.0
                           Y: 1.0
                           Z: 1.0
-                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                      - !SmartCityDemo.Components.CollapseComponent,SmartCityDemo
                         Id: 876d0a9d-2ae9-4284-a73d-1a6923f19f9d
                         AnimationTime: 0.5
                         IsEnabled: true
@@ -838,7 +838,7 @@ Items:
                           X: 1.0
                           Y: 1.0
                           Z: 1.0
-                      - !SmartCityDemo.Components.ColapseComponent,SmartCityDemo
+                      - !SmartCityDemo.Components.CollapseComponent,SmartCityDemo
                         Id: de95c3e9-faf8-4f2a-948c-97cdf8206edb
                         AnimationTime: 0.5
                         IsEnabled: true
@@ -1547,7 +1547,7 @@ Items:
 Managers:
   - !Evergine.Framework.Managers.EnvironmentManager,Evergine.Framework
     Id: e8fb4734-fd1b-4da1-8df7-7c4a3fbf9518
-    IBLReflectionProbe: ac075b6e-296e-4469-9628-8f0d3dc80854
+    IBLReflectionProbe: 8af684d2-988c-40f2-8f7b-3dbb43918653
     IntensityMultiplier: 1.0
     IsEnabled: true
     Strategy: Automatically

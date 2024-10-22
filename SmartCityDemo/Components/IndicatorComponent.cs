@@ -11,7 +11,7 @@ namespace SmartCityDemo.Components
     public class IndicatorComponent : Component
     {
         [BindComponent]
-        private Transform3D transform;
+        private Transform3D transform = null;
 
         private Transform3D targetTransform;
 
