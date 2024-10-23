@@ -1,0 +1,193 @@
+!Evergine.Framework.Assets.AssetSources.Entities.PrefabModel,Evergine.Framework
+Root:
+  Name: building
+  Tag: null
+  IsEnabled: true
+  IsStatic: false
+  Components:
+    - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+      Id: ebefe148-fcdf-4efd-aebd-a1677b6f0260
+      IsEnabled: true
+      LocalOrientation:
+        W: 1.0
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalPosition:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      LocalScale:
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    - !SmartCityDemo.Components.BuildingComponent,SmartCityDemo
+      Id: d7622e25-564c-4100-a731-fe73c26e1e62
+      IsEnabled: true
+  Children:
+    - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+      Name: pushpin
+      Tag: Pushpin1
+      IsEnabled: true
+      IsStatic: false
+      Components:
+        - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+          Id: b56c9586-990d-4f93-ae47-09b80df1e376
+          IsEnabled: true
+          LocalOrientation:
+            W: 1.0
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalPosition:
+            X: 0.00880622864
+            Y: 1.57548368
+            Z: 0.00907969475
+          LocalScale:
+            X: 0.300000012
+            Y: 0.300000012
+            Z: 0.300000012
+        - !Evergine.Components.Graphics3D.Billboard,Evergine.Components
+          Id: 10aa6558-4ac3-4ae0-ae09-ec08006573cb
+          BillboardType: Axial_Orientation
+          FlipMode: None
+          IsEnabled: true
+          Origin:
+            X: 0.5
+            Y: 0.5
+          Rotation: 0.0
+          Sampler: null
+          Texture: 7477a169-64cc-45cd-9af0-c584ff2d1cb4
+          TintColor:
+            A: 255
+            B: 255
+            G: 255
+            R: 255
+        - !Evergine.Components.Graphics3D.BillboardRenderer,Evergine.Components
+          Id: f9a14b48-e49f-4b72-8d1c-66ec9294cb70
+          DebugBoundingbox: true
+          IsCullingEnabled: true
+          IsEnabled: true
+          Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+          OrderBias: 0
+          RenderFlags: CastShadows
+        - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+          Id: 88fa8636-3252-4c90-8b1a-44403a160874
+          Center:
+            X: 0.0
+            Y: 0.0
+          Distance: 1.39999998
+          IsEnabled: true
+          SmoothTime: 0.200000003
+          UpdateOrder: 0.5
+        - !Evergine.Framework.Physics3D.StaticBody3D,Evergine.Framework
+          Id: 06927ae1-169d-45dc-9c86-91972d6b2486
+          CcdMotionThreshold: 0.0
+          CcdSweptSphereRadius: 0.200000003
+          CollisionCategories: Cat2
+          Friction: 0.5
+          IsEnabled: true
+          IsSensor: false
+          MaskBits: All
+          Restitution: 0.0
+          RollingFriction: 0.0
+          UpdateOrder: 0.5
+        - !Evergine.Framework.Physics3D.SphereCollider3D,Evergine.Framework
+          Id: d1d1e9d4-9941-47a4-8354-0b8617086a13
+          IsEnabled: true
+          Margin: 0.0399999991
+          Offset:
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          Radius: 0.5
+        - !SmartCityDemo.Components.PushpinComponent,SmartCityDemo
+          Id: 204e6426-c64c-42b5-85cd-34489f3e5f8f
+          IsEnabled: true
+      Children: []
+      Id: 5447ad1e-8812-4069-868d-8094f9918fc5
+    - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+      Name: buildingPivot
+      Tag: null
+      IsEnabled: true
+      IsStatic: false
+      Components:
+        - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+          Id: 4662fe00-e297-40fb-a007-95fa238e4f06
+          IsEnabled: true
+          LocalOrientation:
+            W: 1.0
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalPosition:
+            X: 0.0
+            Y: 0.0
+            Z: 0.0
+          LocalScale:
+            X: 1.0
+            Y: 1.0
+            Z: 1.0
+        - !SmartCityDemo.Components.CollapseComponent,SmartCityDemo
+          Id: 2c532c82-ab2d-4730-aa3c-9492c559a3c7
+          AnimationTime: 0.5
+          IsEnabled: true
+      Children:
+        - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+          Name: buildingVisual
+          Tag: null
+          IsEnabled: true
+          IsStatic: false
+          Components:
+            - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+              Id: f5a3e2cf-03fc-4543-81d3-d5322e612694
+              IsEnabled: true
+              LocalOrientation:
+                W: 1.0
+                X: 0.0
+                Y: 0.0
+                Z: 0.0
+              LocalPosition:
+                X: -0.000118017197
+                Y: 0.659107924
+                Z: -0.000390052795
+              LocalScale:
+                X: 0.321700096
+                Y: 1.30999994
+                Z: 0.33452037
+            - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+              Id: 0328d58e-9d1d-450b-8c44-e30c8004ba81
+              AsignedTo: Default
+              IsEnabled: true
+              Material: 6a5906ee-6a61-4d86-baeb-484577cc97a4
+              UseCopy: false
+            - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
+              Id: 4d839820-c7f6-4112-9e2f-2602c7798711
+              IsEnabled: true
+              Size: 0.995000005
+              UMirror: false
+              UOffset: 0.0
+              UTile: 0.99000001
+              VMirror: false
+              VOffset: 0.0
+              VTile: 1.0
+            - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+              Id: 9d80d6c5-cafc-4772-a732-d2c28a446b6a
+              DebugBoundingbox: true
+              IsCullingEnabled: true
+              IsEnabled: true
+              OrderBias: 0
+              RenderFlags: CastShadows
+            - !SmartCityDemo.Components.ThresholdBehavior,SmartCityDemo
+              Id: 7c13fa97-9849-4aec-a0b4-482a610b5c19
+              Center:
+                X: 0.0
+                Y: 0.0
+              Distance: 1.39999998
+              IsEnabled: true
+              SmoothTime: 0.0199999996
+              UpdateOrder: 0.5
+          Children: []
+          Id: a68f4c97-ffa6-4f1d-964f-9284556abcc0
+      Id: 6f11aa9b-4509-4a0e-9ffb-517f63800484
+  Id: da925592-38e1-4788-b34c-5e6611ce4ef9

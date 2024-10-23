@@ -12,16 +12,16 @@ namespace SmartCityDemo.Components
         public PushpinComponent PushpinComponent;
 
         [BindComponent(source: BindComponentSource.Children)]
-        public ColapseComponent ColapseComponent;
+        public CollapseComponent CollapseComponent;
 
         public void Select()
         {
-            this.ColapseComponent.Show();
+            this.CollapseComponent.Show();
         }
 
         public void Unselect()
         {
-            this.ColapseComponent.Hide();
+            this.CollapseComponent.Hide();
         }
     }
 }
